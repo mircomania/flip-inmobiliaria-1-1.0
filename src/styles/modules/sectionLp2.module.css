@@ -1,0 +1,158 @@
+.sectionContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url('/src/assets/images/patron-prisma-blanco-5.png');
+    background-repeat: repeat;
+    background-size: auto;
+    padding: 20px 25px;
+    padding-bottom: 30px;
+    gap: 20px;
+}
+
+.sectionContainer h2 {
+    color: var(--orange-color);
+    letter-spacing: 2px;
+    font-size: 34px;
+}
+
+.serviciosContainer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px 0px;
+    width: 325px;
+}
+
+.serviciosContainer a {
+    text-decoration: none;
+}
+
+.servicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--white-color);
+    box-shadow: -6px 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    gap: 10px;
+    height: 120px;
+    width: 325px;
+    padding: 0px 25px;
+}
+
+.servicio h3 {
+    color: var(--orange-color);
+    font-size: 20px;
+}
+
+.servicio p {
+    color: var(--dark-color);
+    font-size: 16px;
+}
+
+@media (min-width: 768px) {
+    .sectionContainer {
+        padding: 40px 35px;
+        padding-bottom: 50px;
+        gap: 30px;
+    }
+
+    .sectionContainer h2 {
+        font-size: 42px;
+    }
+
+    .serviciosContainer {
+        gap: 30px 30px;
+        width: 698px;
+    }
+
+    .servicio {
+        gap: 10px;
+        height: 120px;
+        width: 325px;
+        padding: 0px 25px;
+    }
+
+    .servicio h3 {
+        font-size: 20px;
+    }
+
+    .servicio p {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .sectionContainer {
+        padding: 40px 35px;
+        padding-bottom: 50px;
+        gap: 30px;
+    }
+
+    .sectionContainer h2 {
+        font-size: 52px;
+    }
+
+    .serviciosContainer {
+        gap: 30px 30px;
+        width: 1150px;
+    }
+
+    .servicio {
+        gap: 10px;
+        height: 150px;
+        width: 350px;
+        padding: 0px 25px;
+        transition: transform 0.5s ease;
+    }
+
+    .servicio:hover {
+        transform: scale(0.95);
+        filter: drop-shadow(0px 0px 10px var(--orange-color-2));
+    }
+
+    .servicio h3 {
+        font-size: 22px;
+    }
+
+    .servicio p {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .sectionContainer {
+        padding: 40px 35px;
+        padding-bottom: 60px;
+        gap: 30px;
+    }
+
+    .sectionContainer h2 {
+        font-size: 82px;
+    }
+
+    .serviciosContainer {
+        gap: 50px 50px;
+        width: 1240px;
+    }
+
+    .servicio {
+        gap: 10px;
+        height: 150px;
+        width: 380px;
+        padding: 0px 25px;
+    }
+
+    .servicio h3 {
+        font-size: 24px;
+    }
+
+    .servicio p {
+        font-size: 20px;
+    }
+}
