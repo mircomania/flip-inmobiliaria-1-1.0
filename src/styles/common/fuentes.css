@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'Formula-Bold';
+    src: url('/fonts/FormulaCondensed-Bold.woff2') format('woff2'), url('/fonts/FormulaCondensed-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Alliance No.2';
+    src: url('/fonts/AllianceNo2-Light.woff2') format('woff2'), url('/fonts/AllianceNo2-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+.alliance-text {
+    font-family: 'Alliance No.2', sans-serif;
+    text-shadow: 2px 2px 4px var(--shadow-color);
+    font-weight: bold;
+}
+
+.formula-bold {
+    font-family: 'Formula-Bold', sans-serif;
+    text-shadow: 2px 2px 4px var(--shadow-color);
+}
