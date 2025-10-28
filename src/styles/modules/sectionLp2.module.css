@@ -6,12 +6,21 @@
     background-image: url('/src/assets/images/patron-prisma-blanco-5.png');
     background-repeat: repeat;
     background-size: auto;
+}
+
+.sectionContenido {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to left, transparent 0%, var(--orange-color-2) 300%);
+    width: 100%;
     padding: 20px 25px;
     padding-bottom: 30px;
     gap: 20px;
 }
 
-.sectionContainer h2 {
+.sectionContenido h2 {
     color: var(--orange-color);
     letter-spacing: 2px;
     font-size: 34px;
@@ -56,13 +65,13 @@
 }
 
 @media (min-width: 768px) {
-    .sectionContainer {
+    .sectionContenido {
         padding: 40px 35px;
         padding-bottom: 50px;
         gap: 30px;
     }
 
-    .sectionContainer h2 {
+    .sectionContenido h2 {
         font-size: 42px;
     }
 
@@ -88,13 +97,13 @@
 }
 
 @media (min-width: 1200px) {
-    .sectionContainer {
+    .sectionContenido {
         padding: 40px 35px;
         padding-bottom: 50px;
         gap: 30px;
     }
 
-    .sectionContainer h2 {
+    .sectionContenido h2 {
         font-size: 52px;
     }
 
@@ -126,13 +135,13 @@
 }
 
 @media (min-width: 1400px) {
-    .sectionContainer {
+    .sectionContenido {
         padding: 40px 35px;
         padding-bottom: 60px;
         gap: 30px;
     }
 
-    .sectionContainer h2 {
+    .sectionContenido h2 {
         font-size: 82px;
     }
 
