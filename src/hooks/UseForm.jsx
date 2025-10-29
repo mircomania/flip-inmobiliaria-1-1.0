@@ -91,13 +91,7 @@ export const useForm = (initialState, submitCallback) => {
 
         validateTelefono(newErrors);
 
-        validateEmpresa(newErrors);
-
-        validateRol(newErrors);
-
-        validateEquipo(newErrors);
-
-        validateTool(newErrors);
+        validateEstado(newErrors);
 
         setErrors(newErrors);
         return Object.keys(newErrors).length === 0;
@@ -127,27 +121,9 @@ export const useForm = (initialState, submitCallback) => {
         }
     };
 
-    const validateEmpresa = (newErrors) => {
-        if (!formData.empresa.trim()) {
-            newErrors.empresa = true;
-        }
-    };
-
-    const validateRol = (newErrors) => {
-        if (!formData.rol.trim()) {
-            newErrors.rol = true;
-        }
-    };
-
-    const validateEquipo = (newErrors) => {
-        if (!formData.equipo.trim() || formData.equipo === 'Selecciona una cantidad') {
-            newErrors.equipo = true;
-        }
-    };
-
-    const validateTool = (newErrors) => {
-        if (!formData.tool.trim() || formData.tool === 'Selecciona una opción') {
-            newErrors.tool = true;
+    const validateEstado = (newErrors) => {
+        if (!formData.estado.trim() || formData.estado === 'Selecciona una opción') {
+            newErrors.estado = true;
         }
     };
 
@@ -164,10 +140,7 @@ export const useForm = (initialState, submitCallback) => {
                 nombre: formData.nombre,
                 telefono: formData.telefono,
                 email: formData.email,
-                empresa: formData.empresa,
-                rol: formData.rol,
-                equipo: formData.equipo,
-                tool: formData.tool,
+                estado: formData.estado,
                 ...utmWithoutTimestamp,
             };
             //'http://localhost:5000/submit'
@@ -198,8 +171,7 @@ export const useForm = (initialState, submitCallback) => {
         setFormData({
             ...initialState,
             telefono: '+52',
-            equipo: '',
-            tool: '',
+            estado: '',
         });
         setErrors({});
     };
