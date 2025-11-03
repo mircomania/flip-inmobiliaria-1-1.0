@@ -152,8 +152,8 @@
     .contenido1 img {
         position: absolute;
         right: -10px;
-        top: 100px;
-        width: 200px;
+        top: 50px;
+        width: 270px;
     }
 
     .contenido2 {
@@ -210,8 +210,8 @@
     .contenido1 img {
         position: absolute;
         right: -10px;
-        top: 100px;
-        width: 270px;
+        top: 40px;
+        width: 350px;
     }
 
     .contenido2 {
@@ -241,7 +241,7 @@
     }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1400px) {
     .sectionContainer {
         gap: 30px;
         padding: 40px 35px;
@@ -268,8 +268,8 @@
     .contenido1 img {
         position: absolute;
         right: -10px;
-        top: 100px;
-        width: 390px;
+        top: 40px;
+        width: 450px;
     }
 
     .contenido2 {

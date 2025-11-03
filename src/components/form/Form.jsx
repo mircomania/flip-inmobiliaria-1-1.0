@@ -108,9 +108,9 @@ export const Form = () => {
             {/* BOTON ENVIAR */}
             <div className={styles.contentEnvio}>
                 <button type="submit" className="boton-2 alliance-text" disabled={loading}>
-                    <span style={{ visibility: loading ? 'hidden' : 'visible' }}>Enviar</span>
+                    <span style={{ paddingBottom: '5px', visibility: loading ? 'hidden' : 'visible' }}>Enviar</span>
                     {loading && (
-                        <div style={{ position: 'absolute' }}>
+                        <div>
                             <Spinner size={24} color="white" strokeWidth={3} speed={1} />
                         </div>
                     )}

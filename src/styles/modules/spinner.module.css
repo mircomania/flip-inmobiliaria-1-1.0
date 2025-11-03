@@ -1,5 +1,6 @@
 .spinner {
     animation: rotate var(--spinner-speed, 1s) linear infinite;
+    margin-top: 0px;
 }
 
 .path {

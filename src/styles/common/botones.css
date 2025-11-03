@@ -9,7 +9,6 @@
     border: none;
     box-shadow: -6px 4px 10px rgba(0, 0, 0, 0.2);
     transition: transform 0.5s ease;
-    font-size: 18px;
 }
 
 .boton-1 {
@@ -18,14 +17,16 @@
     color: var(--orange-color);
     padding: 5px 20px;
     padding-bottom: 10px;
+    font-size: 18px;
 }
 
 .boton-2 {
     border-radius: 10px;
     background: var(--dark-color);
     color: var(--white-color);
-    padding: 5px 50px;
-    padding-bottom: 10px;
+    width: 200px;
+    height: 37px;
+    font-size: 18px;
 }
 
 .boton-1:hover {
@@ -42,12 +43,24 @@
         padding-bottom: 10px;
         font-size: 20px;
     }
+
+    .boton-2 {
+        width: 250px;
+        height: 40px;
+        font-size: 20px;
+    }
 }
 
 @media (min-width: 1400px) {
     .boton-1 {
         padding: 5px 40px;
         padding-bottom: 10px;
+        font-size: 24px;
+    }
+
+    .boton-2 {
+        width: 300px;
+        height: 46px;
         font-size: 24px;
     }
 }

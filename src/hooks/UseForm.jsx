@@ -143,8 +143,8 @@ export const useForm = (initialState, submitCallback) => {
                 estado: formData.estado,
                 ...utmWithoutTimestamp,
             };
-            //'http://localhost:5000/submit'
-            const response = await fetch('http://localhost:5000/api/submit', {
+            //'http://localhost:5000/submit | http://localhost:5000/api/submit'
+            const response = await fetch('http://localhost:5000/submit', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(formDataToSend),

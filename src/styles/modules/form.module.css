@@ -73,17 +73,12 @@
 }
 
 @media (min-width: 1400px) {
-    .formControl {
-        padding: 5px 0;
-    }
-}
-
-@media (min-width: 1700px) {
     .campoPrecalificarForm label {
         font-size: 16px;
     }
 
     .formControl {
+        padding: 5px 0;
         font-size: 18px;
         height: 38px;
     }

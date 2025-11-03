@@ -125,7 +125,13 @@
     color: var(--dark-color);
 }
 
-@media (min-width: 1700px) {
+@media (min-width: 1200px) {
+    .react-tel-input .country-list {
+        width: 440px;
+    }
+}
+
+@media (min-width: 1400px) {
     .react-tel-input .form-control {
         font-size: 18px;
         height: 38px;
@@ -136,7 +142,7 @@
     }
 
     .react-tel-input .country-list {
-        width: 700px;
+        width: 540px;
     }
 
     .react-tel-input .country-list .search-box {

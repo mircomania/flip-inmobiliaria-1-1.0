@@ -8,8 +8,8 @@ import Select from 'react-select';
 import PropTypes from 'prop-types';
 
 export const CustomSelect = ({ label, name, options, value, onChange, error, placeholder }) => {
-    const isWide = useMediaQuery('(min-width: 1700px)');
-    const isMedium = useMediaQuery('(min-width: 1200px) and (max-width: 1699px)');
+    const isWide = useMediaQuery('(min-width: 1400px)');
+    const isMedium = useMediaQuery('(min-width: 1200px) and (max-width: 1399px)');
 
     const breakpoint = useMemo(() => {
         if (isWide) return 'wide';

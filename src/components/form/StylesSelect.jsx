@@ -13,7 +13,7 @@ export const StylesSelect = (breakpoint) => {
             padding: '0px 0px',
             maxHeight: breakpoint === 'wide' ? '38px' : breakpoint === 'medium' ? '30px' : '30px',
             minHeight: breakpoint === 'wide' ? '38px' : breakpoint === 'medium' ? '30px' : '30px',
-            maxWidth: breakpoint === 'wide' ? '340px' : breakpoint === 'medium' ? '300px' : '340px',
+            maxWidth: breakpoint === 'wide' ? '540px' : breakpoint === 'medium' ? '440px' : '340px',
             backgroundColor: 'var(--white-color)',
             color: 'var(--dark-color)',
             fontFamily: "'Alliance No.2', sans-serif",
@@ -32,8 +32,8 @@ export const StylesSelect = (breakpoint) => {
             color: 'var(--dark-color)',
             marginLeft: '2px',
             marginRight: '0px',
+            marginBottom: breakpoint === 'wide' ? '4px' : breakpoint === 'medium' ? '2px' : '2px',
             fontFamily: "'Alliance No.2', sans-serif",
-
             fontSize: breakpoint === 'wide' ? '18px' : breakpoint === 'medium' ? '16px' : '16px',
         }),
 
@@ -51,7 +51,6 @@ export const StylesSelect = (breakpoint) => {
             ...provided,
             color: 'var(--dark-color)',
             fontFamily: "'Alliance No.2', sans-serif",
-
             fontSize: breakpoint === 'wide' ? '18px' : breakpoint === 'medium' ? '16px' : '16px',
         }),
 
@@ -65,6 +64,7 @@ export const StylesSelect = (breakpoint) => {
             color: 'var(--dark-color)',
             fontSize: breakpoint === 'wide' ? '18px' : breakpoint === 'medium' ? '16px' : '16px',
             padding: '0px 0px',
+            marginBottom: breakpoint === 'wide' ? '4px' : breakpoint === 'medium' ? '2px' : '2px',
         }),
 
         indicatorsContainer: (provided) => ({
