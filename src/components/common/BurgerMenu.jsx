@@ -118,7 +118,7 @@ export const BurgerMenu = () => {
                     {/* LOGO  */}
 
                     <div className="logo-mobile-menu">
-                        <img src={LogoBurger} alt="Logotipo de Method Lab" loading="lazy" decoding="async" />
+                        <img src={LogoBurger} alt="Logotipo de Flip Inmobiliaria" loading="lazy" decoding="async" />
                     </div>
                 </div>
             </div>

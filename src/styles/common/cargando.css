@@ -30,6 +30,7 @@
 .cargando-container img {
     height: 80px;
     animation: saltar 1s ease-in-out infinite;
+    filter: drop-shadow(0px 0px 5px var(--orange-color));
 }
 
 .typing {
@@ -47,18 +48,18 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    min-height: calc(100vh - 294px);
+    min-height: calc(100vh - 203px);
     overflow: hidden;
 }
 
 @media (min-width: 768px) {
     .cargando {
-        min-height: calc(100vh - 299px);
+        min-height: calc(100vh - 208px);
     }
 }
 
 @media (min-width: 1400px) {
     .cargando {
-        min-height: calc(100vh - 323px);
+        min-height: calc(100vh - 232px);
     }
 }

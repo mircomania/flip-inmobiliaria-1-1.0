@@ -18,7 +18,7 @@ export const Footer = () => {
     return (
         <footer className="footer">
             <a href="/" aria-label="Ir a la página de inicio" data-link="footer-logo-btn" onClick={handleLogoClick}>
-                <img src={logoFooter} alt="Logotipo de Method Lab en el pie de página" />
+                <img src={logoFooter} alt="Logotipo de Flip Inmobiliaria en el pie de página" />
             </a>
 
             <NavLink className="alliance-text" to="/politica-privacidad" title="Ver la política de privacidad" data-link="footer-politica-link">

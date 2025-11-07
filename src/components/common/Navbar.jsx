@@ -64,7 +64,7 @@ export const Navbar = () => {
 
                 <div className="logo-container">
                     <a href="/" aria-label="Ir a la página principal" data-link="navbar-logo-btn" onClick={handleLogoClick}>
-                        <img src={LogoNavbar} alt="Logotipo de Method Lab en la barra de navegación" className="logo-navbar" />
+                        <img src={LogoNavbar} alt="Logotipo de Flip Inmobiliaria en la barra de navegación" className="logo-navbar" />
                     </a>
                 </div>
 

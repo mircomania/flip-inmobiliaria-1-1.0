@@ -3,9 +3,9 @@ import logo from '../../assets/images/logo.png';
 export const Cargando = () => {
     return (
         <div className="cargando-container">
-            <img src={logo} alt="Logotipo de Foodie Guru" />
+            <img src={logo} alt="Logotipo de Flip Inmobiliaria" />
 
-            <p className="poppins-text typing">Cargando...</p>
+            <p className="alliance-text typing">Cargando...</p>
         </div>
     );
 };
