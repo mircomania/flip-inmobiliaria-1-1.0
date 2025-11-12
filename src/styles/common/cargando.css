@@ -48,18 +48,6 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    min-height: calc(100vh - 203px);
+    min-height: 100svh;
     overflow: hidden;
-}
-
-@media (min-width: 768px) {
-    .cargando {
-        min-height: calc(100vh - 208px);
-    }
-}
-
-@media (min-width: 1400px) {
-    .cargando {
-        min-height: calc(100vh - 232px);
-    }
 }

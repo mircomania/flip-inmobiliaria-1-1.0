@@ -20,6 +20,18 @@ function App() {
         return () => clearTimeout(timer);
     }, []);
 
+    useEffect(() => {
+        if (loading) {
+            document.body.style.overflow = 'hidden';
+        } else {
+            document.body.style.overflow = 'auto';
+        }
+
+        return () => {
+            document.body.style.overflow = 'auto';
+        };
+    }, [loading]);
+
     return (
         <BrowserRouter basename="flip-inmobiliaria-1-1.0">
             <ScrollToTop />

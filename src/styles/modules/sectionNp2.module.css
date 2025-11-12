@@ -1,0 +1,187 @@
+.sectionContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--orange-color-2);
+    padding: 20px 25px;
+    padding-bottom: 80px;
+    gap: 40px;
+}
+
+.sectionTitulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+    width: 325px;
+}
+
+.sectionTitulo h2 {
+    color: var(--white-color);
+    letter-spacing: 2px;
+    font-size: 34px;
+}
+
+.sectionTitulo p {
+    color: var(--dark-color);
+    text-align: center;
+    font-size: 16px;
+}
+
+.conocenosContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.conocenos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    text-align: center;
+    background-color: var(--white-color);
+    box-shadow: -6px 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    width: 325px;
+    height: 170px;
+    gap: 10px;
+    padding: 15px 10px;
+}
+
+.conocenos h3 {
+    color: var(--orange-color);
+    font-size: 24px;
+}
+
+.conocenos p {
+    color: var(--dark-color);
+    font-size: 16px;
+}
+
+@media (min-width: 576px) {
+    .sectionTitulo {
+        width: 500px;
+    }
+}
+
+@media (min-width: 768px) {
+    .sectionContainer {
+        padding: 40px 35px;
+        padding-bottom: 80px;
+        gap: 40px;
+    }
+
+    .sectionTitulo {
+        width: 500px;
+    }
+
+    .sectionTitulo h2 {
+        font-size: 42px;
+    }
+
+    .sectionTitulo p {
+        font-size: 16px;
+    }
+
+    .conocenosContainer {
+        flex-direction: row;
+        gap: 30px;
+    }
+
+    .conocenos {
+        width: 325px;
+        height: 170px;
+        gap: 10px;
+        padding: 15px 10px;
+    }
+
+    .conocenos h3 {
+        font-size: 24px;
+    }
+
+    .conocenos p {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .sectionContainer {
+        padding: 40px 35px;
+        padding-bottom: 80px;
+        gap: 40px;
+    }
+
+    .sectionTitulo {
+        width: 700px;
+    }
+
+    .sectionTitulo h2 {
+        font-size: 52px;
+    }
+
+    .sectionTitulo p {
+        font-size: 18px;
+    }
+
+    .conocenosContainer {
+        gap: 50px;
+    }
+
+    .conocenos {
+        width: 400px;
+        height: 190px;
+        gap: 10px;
+        padding: 15px 10px;
+    }
+
+    .conocenos h3 {
+        font-size: 28px;
+    }
+
+    .conocenos p {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .sectionContainer {
+        padding: 40px 35px;
+        padding-bottom: 100px;
+        gap: 40px;
+    }
+
+    .sectionTitulo {
+        width: 900px;
+    }
+
+    .sectionTitulo h2 {
+        font-size: 82px;
+    }
+
+    .sectionTitulo p {
+        font-size: 20px;
+    }
+
+    .conocenosContainer {
+        gap: 100px;
+    }
+
+    .conocenos {
+        width: 500px;
+        height: 190px;
+        gap: 10px;
+        padding: 15px 10px;
+    }
+
+    .conocenos h3 {
+        font-size: 32px;
+    }
+
+    .conocenos p {
+        font-size: 20px;
+    }
+}
