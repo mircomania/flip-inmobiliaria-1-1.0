@@ -2,7 +2,7 @@ export const navLinks = [
     { id: 'inicio', to: '/', label: 'Inicio', title: 'Ir al inicio', dataLink: 'navbar-inicio-link' },
     {
         id: 'servicios',
-        to: '#servicios',
+        to: '/servicios',
         label: 'Servicios',
         title: 'Conoce los servicios de Flip Inmobiliaria',
         dataLink: 'navbar-servicios-link',
@@ -16,7 +16,7 @@ export const navLinks = [
     },
     {
         id: 'contacto',
-        to: '#contacto',
+        to: '/contacto',
         label: 'Contáctanos',
         title: 'Contactate con Flip Inmobiliaria',
         dataCta: 'navbar-contacto-link',
