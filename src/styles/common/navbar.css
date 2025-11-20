@@ -3,7 +3,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: var(--dark-color);
+    background: linear-gradient(to left, var(--dark-color-2) 0%, var(--dark-color) 100%);
     box-shadow: 0 4px 10px var(--shadow-color);
     width: 100%;
     z-index: 99;

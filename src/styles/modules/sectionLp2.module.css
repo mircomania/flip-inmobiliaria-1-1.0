@@ -3,7 +3,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-image: url('/src/assets/images/patron-prisma-blanco-5.png');
+    /* background-image: url('/src/assets/images/patron-prisma-blanco-2.png'); */
+    background: linear-gradient(to top, transparent 0%, var(--dark-color) 500%);
     background-repeat: repeat;
     background-size: auto;
 }
@@ -13,7 +14,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(to left, transparent 0%, var(--orange-color-2) 300%);
+    background: linear-gradient(to right, transparent 0%, var(--orange-color-2) 400%);
     width: 100%;
     padding: 20px 25px;
     padding-bottom: 30px;
@@ -21,7 +22,7 @@
 }
 
 .sectionContenido h2 {
-    color: var(--orange-color);
+    color: var(--orange-color-2);
     letter-spacing: 2px;
     font-size: 34px;
 }
@@ -55,7 +56,7 @@
 }
 
 .servicio h3 {
-    color: var(--orange-color);
+    color: var(--orange-color-2);
     font-size: 20px;
 }
 

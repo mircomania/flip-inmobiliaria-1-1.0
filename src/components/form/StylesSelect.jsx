@@ -17,8 +17,8 @@ export const StylesSelect = (breakpoint) => {
             backgroundColor: 'var(--white-color)',
             color: 'var(--dark-color)',
             fontFamily: "'Alliance No.2', sans-serif",
-
             marginBottom: '15px',
+            filter: 'drop-shadow(0px 0px 5px var(--orange-color-2))',
         }),
 
         valueContainer: (provided) => ({

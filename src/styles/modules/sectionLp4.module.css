@@ -1,6 +1,6 @@
 .sectionContainer {
     overflow: hidden;
-    background-color: var(--gray-color);
+    background: linear-gradient(to bottom, transparent 0%, var(--dark-color) 500%);
 }
 
 .fondo {
@@ -8,7 +8,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(to left, transparent 0%, var(--orange-color-2) 300%);
+    background: linear-gradient(to right, transparent 0%, var(--orange-color-2) 400%);
     gap: 20px;
     padding: 20px 25px;
 }
@@ -24,7 +24,7 @@
 
 .sectionTitle h2 {
     letter-spacing: 1.5px;
-    color: var(--orange-color);
+    color: var(--orange-color-2);
     font-size: 34px;
 }
 
@@ -74,6 +74,7 @@
     }
 
     .sectionContenido img {
+        filter: drop-shadow(0px 0px 100px var(--orange-color-2));
         width: 335px;
     }
 }
