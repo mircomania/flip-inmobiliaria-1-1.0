@@ -1,43 +1,26 @@
 import styles from '../../styles/modules/sectionNp3.module.css';
-
-import { Servicios } from '../utils/Servicios';
-
-import { NavLink } from 'react-router-dom';
+import img from '../../assets/images/img-np-section-3-1.png';
 
 export const SectionNp3 = () => {
     return (
         <section className={styles.sectionContainer}>
             <div className={styles.sectionContenido}>
-                <div className={styles.sectionOficinas}>
-                    <h2 className="formula-bold">Nuestras Oficinas</h2>
+                <header>
+                    <h2 className="formula-bold">Nuestra Misión</h2>
+                </header>
 
-                    <div className={styles.direccion}>
-                        <h3 className="alliance-text">Monterrey</h3>
+                <div className={styles.sectionTexto}>
+                    <p className="alliance-text">
+                        Proporcionar servicios inmobiliarios de alta calidad, brindando soluciones integrales y personalizadas a nuestros clientes,
+                        con un enfoque en la excelencia en el servicio al cliente y la satisfacción del mismo.
+                    </p>
 
-                        <p className="alliance-text">
-                            Emilio Carranza 732, Centro,
-                            <br /> 64700 Monterrey, N.L.
-                        </p>
-                    </div>
-                </div>
-
-                <div className={styles.sectionServicios}>
-                    <h2 className="formula-bold">Servicios que ofrecemos</h2>
-
-                    <div className={styles.serviciosContainer}>
-                        {Servicios.map((servicio) => (
-                            <NavLink
-                                key={servicio.id}
-                                className={styles.servicio}
-                                to={servicio.to}
-                                {...(servicio.dataLink2 && { 'data-link': servicio.dataLink2 })}
-                            >
-                                <img src={servicio.icono} alt={servicio.texto} />
-
-                                <h3 className="alliance-text">{servicio.titulo2}</h3>
-                            </NavLink>
-                        ))}
-                    </div>
+                    <img
+                        src={img}
+                        alt="Personal de ventas de Flip inmobiliaria trabajando para darte el mejor servicio"
+                        loading="lazy"
+                        decoding="async"
+                    />
                 </div>
             </div>
         </section>

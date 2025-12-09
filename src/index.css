@@ -21,3 +21,7 @@ body {
 html {
     scrollbar-gutter: stable;
 }
+
+.fondo-degradado {
+    background: linear-gradient(to bottom, var(--shadow-color-2) 0%, transparent 10%, transparent 90%, var(--shadow-color-2) 100%);
+}

@@ -1,15 +1,20 @@
 import { SectionNp1 } from '../exports/SectionNp1';
 import { SectionNp2 } from '../exports/SectionNp2';
 import { SectionNp3 } from '../exports/SectionNp3';
+import { SectionNp4 } from '../exports/SectionNp4';
 
 const NosotrosPage = () => {
     return (
         <main>
             <SectionNp1 />
 
-            <SectionNp2 />
+            <section className="fondo-degradado">
+                <SectionNp2 />
 
-            <SectionNp3 />
+                <SectionNp3 />
+
+                <SectionNp4 />
+            </section>
         </main>
     );
 };
