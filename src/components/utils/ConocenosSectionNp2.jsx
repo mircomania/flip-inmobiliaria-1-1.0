@@ -1,12 +1,17 @@
 export const ConocenosSectionNp2 = [
     {
         id: '1',
-        titulo: 'Misión',
-        texto: 'Brindar servicios inmobiliarios de alta calidad, ofreciendo soluciones integrales y personalizadas con un enfoque en la excelencia, la trasparencia y la satisfacción de nuestros clientes. ',
+        titulo: 'Clientes Satisfechos',
+        texto: '1000',
     },
     {
         id: '2',
-        titulo: 'Visión',
-        texto: 'Ser una empresa líder en el sector inmobiliario, reconocida por su innovación, ética y compromiso en cada proyecto que emprendemos.',
+        titulo: 'Años en el Mercado',
+        texto: '5',
+    },
+    {
+        id: '3',
+        titulo: 'Número de Empleados',
+        texto: '50',
     },
 ];

@@ -23,6 +23,12 @@ export const SectionNp1 = () => {
                 </video>
 
                 <img src={logo} alt="logotipo de Flip Inmobiliaria" />
+
+                <div className={`${styles.sectionTexto} alliance-text`}>
+                    <p>Contamos con experiencia en compra y venta de inmuebles, gestion de créditos infonavit y proyectos de remodelación.</p>
+
+                    <p>Nuestro proceso prioriza la transparencia, tiempos reducidos y atención personalizada.</p>
+                </div>
             </div>
         </section>
     );
