@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: var(--dark-color);
+    background: linear-gradient(to left, var(--dark-color-2) 0%, var(--dark-color) 100%);
     width: 100%;
     padding: 20px 25px;
     gap: 20px;

@@ -44,25 +44,38 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    text-align: center;
+    justify-content: space-between;
     background-color: var(--white-color);
     box-shadow: -6px 4px 10px rgba(0, 0, 0, 0.2);
     border-radius: 20px;
-    gap: 10px;
-    height: 120px;
+    gap: 30px;
+    height: 310px;
     width: 325px;
     padding: 0px 25px;
+    padding-top: 20px;
 }
 
-.servicio h3 {
+.servicioTexto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+}
+
+.servicioTexto h3 {
     color: var(--orange-color-2);
     font-size: 20px;
 }
 
-.servicio p {
+.servicioTexto p {
     color: var(--dark-color);
     font-size: 16px;
+}
+
+.servicio img {
+    width: 325px;
 }
 
 @media (min-width: 768px) {
@@ -83,9 +96,10 @@
 
     .servicio {
         gap: 10px;
-        height: 120px;
         width: 325px;
+        height: 310px;
         padding: 0px 25px;
+        padding-top: 20px;
     }
 
     .servicio h3 {
@@ -115,9 +129,9 @@
 
     .servicio {
         gap: 10px;
-        height: 150px;
         width: 350px;
         padding: 0px 25px;
+        padding-top: 20px;
         transition: transform 0.5s ease;
     }
 
@@ -132,6 +146,10 @@
 
     .servicio p {
         font-size: 18px;
+    }
+
+    .servicio img {
+        width: 350px;
     }
 }
 
@@ -148,14 +166,16 @@
 
     .serviciosContainer {
         gap: 50px 50px;
-        width: 1240px;
+        width: 1300px;
     }
 
     .servicio {
         gap: 10px;
-        height: 150px;
-        width: 380px;
+        width: 400px;
+        height: 350px;
         padding: 0px 25px;
+        padding-top: 20px;
+        transition: transform 0.5s ease;
     }
 
     .servicio h3 {
@@ -164,5 +184,47 @@
 
     .servicio p {
         font-size: 20px;
+    }
+
+    .servicio img {
+        width: 400px;
+    }
+}
+
+@media (min-width: 1700px) {
+    .sectionContenido {
+        padding: 40px 35px;
+        padding-bottom: 60px;
+        gap: 30px;
+    }
+
+    .sectionContenido h2 {
+        font-size: 82px;
+    }
+
+    .serviciosContainer {
+        gap: 50px 50px;
+        width: 1600px;
+    }
+
+    .servicio {
+        gap: 10px;
+        width: 500px;
+        height: 400px;
+        padding: 0px 25px;
+        padding-top: 20px;
+        transition: transform 0.5s ease;
+    }
+
+    .servicio h3 {
+        font-size: 24px;
+    }
+
+    .servicio p {
+        font-size: 20px;
+    }
+
+    .servicio img {
+        width: 500px;
     }
 }

@@ -35,7 +35,7 @@ export const SectionLp1 = () => {
                         su venta o renta. Atención personalizada y procesos claros
                     </p>
 
-                    <BotonNav dataCta="inicio-1-btn"> Contáctanos Ahora</BotonNav>
+                    <BotonNav dataCta="inicio-1-btn">Contáctanos Ahora</BotonNav>
                 </div>
             </div>
         </section>

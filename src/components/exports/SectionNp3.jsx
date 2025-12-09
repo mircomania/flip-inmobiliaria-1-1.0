@@ -32,7 +32,7 @@ export const SectionNp3 = () => {
                                 to={servicio.to}
                                 {...(servicio.dataLink2 && { 'data-link': servicio.dataLink2 })}
                             >
-                                <img src={servicio.img} alt={servicio.texto} />
+                                <img src={servicio.icono} alt={servicio.texto} />
 
                                 <h3 className="alliance-text">{servicio.titulo2}</h3>
                             </NavLink>

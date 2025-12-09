@@ -20,9 +20,13 @@ export const SectionLp2 = () => {
                             to={servicio.to}
                             {...(servicio.dataLink && { 'data-link': servicio.dataLink })}
                         >
-                            <h3 className="alliance-text">{servicio.titulo}</h3>
+                            <div className={styles.servicioTexto}>
+                                <h3 className="alliance-text">{servicio.titulo}</h3>
 
-                            <p className="alliance-text">{servicio.texto}</p>
+                                <p className="alliance-text">{servicio.texto}</p>
+                            </div>
+
+                            <img src={servicio.img} alt="" />
                         </NavLink>
                     ))}
                 </div>
