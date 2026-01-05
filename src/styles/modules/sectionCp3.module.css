@@ -5,9 +5,13 @@
     justify-content: center;
     overflow: hidden;
     background: linear-gradient(to bottom, transparent 0%, var(--dark-color) 500%);
-    padding: 40px 0;
     padding-bottom: 60px;
     gap: 20px;
+}
+
+.sectionContainer img {
+    width: 100%;
+    height: auto;
 }
 
 .sectionContainer header {
@@ -53,7 +57,6 @@
 
 @media (min-width: 1200px) {
     .sectionContainer {
-        padding: 60px 0;
         padding-bottom: 80px;
         gap: 40px;
     }
@@ -93,7 +96,6 @@
 
 @media (min-width: 1400px) {
     .sectionContainer {
-        padding: 80px 0;
         padding-bottom: 100px;
         gap: 60px;
     }

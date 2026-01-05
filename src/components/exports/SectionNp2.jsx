@@ -6,6 +6,10 @@ import { Counter } from '../utils/Counter';
 export const SectionNp2 = () => {
     return (
         <section className={styles.sectionContainer}>
+            <header>
+                <h2 className="formula-bold">trayectoria </h2>
+            </header>
+
             <div className={styles.sectionContenido}>
                 {ConocenosSectionNp2.map((item) => {
                     const { ref, isVisible } = useScrollReveal({ threshold: 0.05 });

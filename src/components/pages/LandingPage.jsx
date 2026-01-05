@@ -4,6 +4,7 @@ import { useLocation } from 'react-router-dom';
 import { SectionLp1 } from '../exports/SectionLp1';
 import { SectionLp2 } from '../exports/SectionLp2';
 import { SectionLp4 } from '../exports/SectionLp4';
+import { SectionLp5 } from '../exports/SectionLp5';
 
 const LandingPage = () => {
     const location = useLocation();
@@ -26,6 +27,8 @@ const LandingPage = () => {
             <SectionLp1 />
 
             <SectionLp2 />
+
+            <SectionLp5 />
 
             <SectionLp4 />
         </main>

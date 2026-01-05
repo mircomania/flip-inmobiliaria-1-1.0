@@ -1,138 +1,77 @@
 .sectionContainer {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 40px 0px;
-    padding-bottom: 120px;
+    text-align: center;
+    padding-top: 40px;
+    gap: 20px;
 }
 
-.sectionContenido header h2 {
+.sectionContainer header h2 {
     line-height: 1;
     letter-spacing: 1.5px;
     color: var(--orange-color-2);
     font-size: 42px;
 }
 
-.sectionContenido {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    width: 325px;
-    gap: 20px;
-}
-
-.sectionTexto {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-}
-
-.sectionTexto p {
+.sectionContainer p {
     color: var(--dark-color);
     width: 325px;
     font-size: 16px;
 }
 
-.sectionTexto img {
-    width: 300px;
+.sectionContainer img {
+    width: 100%;
+    height: auto;
 }
 
 @media (min-width: 768px) {
     .sectionContainer {
-        padding: 60px 0px;
-        padding-bottom: 120px;
+        padding-top: 60px;
+        gap: 20px;
     }
 
-    .sectionContenido header h2 {
+    .sectionContainer header h2 {
         font-size: 62px;
     }
 
-    .sectionContenido {
-        display: flex;
-        flex-direction: column;
-        align-items: end;
-        justify-content: center;
-        width: 665px;
-        gap: 40px;
-    }
-
-    .sectionTexto {
-        display: flex;
-        flex-direction: row-reverse;
-        align-items: center;
-        justify-content: center;
-        gap: 40px;
-    }
-
-    .sectionTexto p {
-        color: var(--dark-color);
-        width: 325px;
+    .sectionContainer p {
+        width: 600px;
         font-size: 16px;
-    }
-
-    .sectionTexto img {
-        width: 300px;
     }
 }
 
 @media (min-width: 1200px) {
     .sectionContainer {
-        padding: 60px 0px;
-        padding-bottom: 120px;
+        padding-top: 60px;
+        gap: 20px;
     }
 
-    .sectionContenido header h2 {
+    .sectionContainer header h2 {
         font-size: 69px;
     }
 
-    .sectionContenido {
-        width: 760px;
-        gap: 40px;
-    }
-
-    .sectionTexto {
-        gap: 50px;
-    }
-
-    .sectionTexto p {
-        width: 360px;
-        font-size: 18px;
-    }
-
-    .sectionTexto img {
-        width: 350px;
+    .sectionContainer p {
+        width: 750px;
+        font-size: 20px;
+        margin-bottom: 20px;
     }
 }
 
 @media (min-width: 1700px) {
     .sectionContainer {
-        padding: 60px 0px;
-        padding-bottom: 120px;
+        padding-top: 80px;
+        gap: 20px;
     }
 
-    .sectionContenido header h2 {
-        font-size: 77px;
+    .sectionContainer header h2 {
+        font-size: 82px;
     }
 
-    .sectionContenido {
-        width: 900px;
-        gap: 40px;
-    }
-
-    .sectionTexto {
-        gap: 100px;
-    }
-
-    .sectionTexto p {
-        width: 400px;
-        font-size: 20px;
-    }
-
-    .sectionTexto img {
-        width: 400px;
+    .sectionContainer p {
+        width: 950px;
+        font-size: 26px;
+        margin-bottom: 40px;
     }
 }
