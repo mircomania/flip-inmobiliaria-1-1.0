@@ -180,7 +180,7 @@
 
 @media (min-width: 992px) {
     .navbar {
-        padding: 0 60px;
+        padding: 0 100px;
     }
 
     .logo-navbar {
@@ -209,17 +209,19 @@
     }
 
     .dropdown-menu {
+        display: flex;
+        flex-direction: column;
         position: absolute;
-        top: 100%;
-        right: 0;
+        top: 120%;
+        left: -20px;
         background: var(--dark-color);
-        padding: 10px 0;
+        padding: 20px 0px;
         border-radius: 10px;
-        box-shadow: 0 4px 10px var(--shadow-color);
         opacity: 0;
         visibility: hidden;
         transform: translateY(10px);
         transition: all 0.2s ease;
+        gap: 20px;
     }
 
     .dropdown:hover .dropdown-menu {
@@ -229,8 +231,10 @@
     }
 
     .dropdown-menu li {
-        padding: 8px 20px;
+        list-style: none;
         white-space: nowrap;
+        font-size: 16px;
+        padding: 0 20px;
     }
 
     /* --------- ESTILOS PARA LINKS*/
@@ -241,12 +245,6 @@
 
     .menu-nav li a.active:hover {
         filter: none;
-    }
-}
-
-@media (min-width: 1200px) {
-    .navbar {
-        padding: 0 100px;
     }
 }
 
@@ -264,5 +262,15 @@
     .menu-nav {
         gap: 50px;
         font-size: 20px;
+    }
+
+    .dropdown-menu {
+        top: 150%;
+        left: -30px;
+    }
+
+    .dropdown-menu li {
+        font-size: 18px;
+        padding: 0 30px;
     }
 }
