@@ -25,15 +25,22 @@ export const Navbar = () => {
                 {!isMobile && (
                     <ul className="menu-nav alliance-text">
                         {navLinks.map((item) => (
-                            <li key={item.id}>
-                                <NavLink
-                                    to={item.to}
-                                    title={item.title}
-                                    className={({ isActive }) => (isActive ? 'active' : '')}
-                                    data-link={item.dataLink}
-                                >
-                                    {item.label}
-                                </NavLink>
+                            <li key={item.id} className="nav-item">
+                                {item.children ? (
+                                    <div className="dropdown">
+                                        <span className="dropdown-trigger">{item.label}</span>
+
+                                        <ul className="dropdown-menu">
+                                            {item.children.map((child) => (
+                                                <li key={child.id}>
+                                                    <NavLink to={child.to}>{child.label}</NavLink>
+                                                </li>
+                                            ))}
+                                        </ul>
+                                    </div>
+                                ) : (
+                                    <NavLink to={item.to}>{item.label}</NavLink>
+                                )}
                             </li>
                         ))}
                     </ul>

@@ -1,24 +1,28 @@
 export const navLinks = [
-    { id: 'inicio', to: '/', label: 'Inicio', title: 'Ir al inicio', dataLink: 'navbar-inicio-link' },
+    {
+        id: 'inicio',
+        to: '/',
+        label: 'Inicio',
+    },
     {
         id: 'servicios',
-        to: '/servicios',
         label: 'Servicios',
-        title: 'Conoce los servicios de Flip Inmobiliaria',
-        dataLink: 'navbar-servicios-link',
+        children: [
+            { id: 'comprar', to: '/comprar', label: 'Comprar' },
+            { id: 'vender', to: '/vender', label: 'Vender' },
+            { id: 'remodelar', to: '/remodelar', label: 'Remodelar' },
+            { id: 'rentar', to: '/rentar', label: 'Rentar' },
+            { id: 'infonavit', to: '/infonavit', label: 'Infonavit' },
+        ],
     },
     {
         id: 'nosotros',
         to: '/nosotros',
         label: 'Nosotros',
-        title: 'Conoce a sobre Flip Inmobiliaria',
-        dataLink: 'navbar-nosotros-link',
     },
     {
         id: 'contacto',
         to: '/contacto',
         label: 'Contáctanos',
-        title: 'Contactate con Flip Inmobiliaria',
-        dataCta: 'navbar-contacto-link',
     },
 ];

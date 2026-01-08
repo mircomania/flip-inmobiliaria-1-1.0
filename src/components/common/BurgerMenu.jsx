@@ -9,13 +9,21 @@ import { navLinks } from '../utils/NavBarMenu';
 
 export const BurgerMenu = () => {
     const [isOpen, setIsOpen] = useState(false);
-    const [isScrolled, setIsScrolled] = useState(false);
+    const [openSubmenu, setOpenSubmenu] = useState(null);
+
     const menuRef = useRef(null);
 
+    /* ABRIR Y CERRAR MENU PRINCIPAL */
     const toggleMenu = () => {
         setIsOpen(!isOpen);
     };
 
+    /* ABRIR Y CERRAR SUB MENU */
+    const toggleSubmenu = (id) => {
+        setOpenSubmenu(openSubmenu === id ? null : id);
+    };
+
+    /* CERRAR MENU SI SE CLIQUEA FUERA */
     useEffect(() => {
         const handleClickOutside = (event) => {
             if (isOpen && menuRef.current && !menuRef.current.contains(event.target)) {
@@ -29,47 +37,61 @@ export const BurgerMenu = () => {
         };
     }, [isOpen]);
 
+    /* BLOQUEAR EL SCROLL DEL BODY */
     useEffect(() => {
-        const handleScroll = () => {
-            setIsScrolled(isOpen && window.scrollY > 0.1);
-        };
+        if (isOpen) {
+            document.body.style.overflow = 'hidden';
+        } else {
+            document.body.style.overflow = '';
+        }
 
-        window.addEventListener('scroll', handleScroll);
         return () => {
-            window.removeEventListener('scroll', handleScroll);
+            document.body.style.overflow = '';
         };
     }, [isOpen]);
 
     return (
         <div className="burger-menu" ref={menuRef}>
             {/* ICONO */}
+            <div className={`burger-menu-container ${isOpen ? 'open' : ''}`}>
+                <BurgerIcon onClick={toggleMenu} className="burger-menu-icon" aria-label="Abrir menú" />
+            </div>
 
-            <BurgerIcon onClick={toggleMenu} className={`burger-menu-icon ${isScrolled && isOpen ? 'fixed' : 'absolute'}`} aria-label="Abrir menú" />
-
-            {/* CONTENEDOR LISTA */}
-
+            {/* CONTENEDOR MENU */}
             <div className={`mobile-nav-menu ${isOpen ? 'open' : ''}`}>
-                {/* LISTA  */}
-
+                {/* MENUS  */}
                 <ul className="burger-menu-nav alliance-text">
-                    {navLinks.map((link) => (
-                        <div className="link-container" key={link.id}>
-                            <li>
-                                <NavLink to={link.to} onClick={toggleMenu} title={link.title} data-link={link.dataLink}>
-                                    {link.label}
+                    {navLinks.map((item) => (
+                        <li key={item.id}>
+                            {item.children ? (
+                                /* SUB MENU */
+                                <>
+                                    <button className="submenu-trigger" onClick={() => toggleSubmenu(item.id)}>
+                                        {item.label}
+                                    </button>
+
+                                    <ul className={`submenu ${openSubmenu === item.id ? 'open' : ''}`}>
+                                        <li className="submenu-inner">
+                                            {item.children.map((child) => (
+                                                <NavLink key={child.id} to={child.to} onClick={toggleMenu}>
+                                                    {child.label}
+                                                </NavLink>
+                                            ))}
+                                        </li>
+                                    </ul>
+                                </>
+                            ) : (
+                                /* MAIN MENU */
+                                <NavLink to={item.to} onClick={toggleMenu}>
+                                    {item.label}
                                 </NavLink>
-                            </li>
-                        </div>
+                            )}
+                        </li>
                     ))}
                 </ul>
 
-                <div className="container-bajo-mobile">
-                    {/* LOGO  */}
-
-                    <div className="logo-mobile-menu">
-                        <img src={LogoBurger} alt="Logotipo de Flip Inmobiliaria" loading="lazy" decoding="async" />
-                    </div>
-                </div>
+                {/* LOGO  */}
+                <img src={LogoBurger} alt="Logotipo de Flip Inmobiliaria" loading="lazy" decoding="async" />
             </div>
         </div>
     );
