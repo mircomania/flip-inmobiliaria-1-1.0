@@ -1,10 +1,10 @@
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 
-import { SectionLp1 } from '../exports/SectionLp1';
-import { SectionLp2 } from '../exports/SectionLp2';
-import { SectionLp4 } from '../exports/SectionLp4';
-import { SectionLp5 } from '../exports/SectionLp5';
+import { SectionLp1 } from '../exports/landing/SectionLp1';
+import { SectionLp2 } from '../exports/landing/SectionLp2';
+import { SectionLp4 } from '../exports/landing/SectionLp4';
+import { SectionLp5 } from '../exports/landing/SectionLp5';
 
 const LandingPage = () => {
     const location = useLocation();

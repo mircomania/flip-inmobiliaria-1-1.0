@@ -7,6 +7,11 @@ import { ScrollToTop } from './hooks/ScrollTop';
 import { Footer } from './components/common/Footer';
 
 const LandingPage = lazy(() => import('./components/pages/LandingPage'));
+const ServicioCompra = lazy(() => import('./components/pages/ServicioCompra'));
+const ServicioVenta = lazy(() => import('./components/pages/ServicioVenta'));
+const ServicioRemodelar = lazy(() => import('./components/pages/ServicioRemodelar'));
+const ServicioRentar = lazy(() => import('./components/pages/ServicioRentar'));
+const ServicioInfonavit = lazy(() => import('./components/pages/ServicioInfonavit'));
 const NosotrosPage = lazy(() => import('./components/pages/NosotrosPage'));
 const ContactoPage = lazy(() => import('./components/pages/ContactoPage'));
 
@@ -53,6 +58,11 @@ function App() {
                 >
                     <Routes>
                         <Route path="/" element={<LandingPage />}></Route>
+                        <Route path="/comprar" element={<ServicioCompra />}></Route>
+                        <Route path="/vender" element={<ServicioVenta />}></Route>
+                        <Route path="/rentar" element={<ServicioRentar />}></Route>
+                        <Route path="/remodelar" element={<ServicioRemodelar />}></Route>
+                        <Route path="/infonavit" element={<ServicioInfonavit />}></Route>
                         <Route path="/nosotros" element={<NosotrosPage />}></Route>
                         <Route path="/contacto" element={<ContactoPage />}></Route>
                     </Routes>

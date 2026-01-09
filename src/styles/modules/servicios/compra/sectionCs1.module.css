@@ -1,0 +1,117 @@
+.sectionContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+.sectionContainer header h1 {
+    color: var(--orange-color);
+    letter-spacing: 1.5px;
+    font-size: 42px;
+}
+
+.sectionContenido {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.sectionContenido img {
+    width: 325px;
+}
+
+.sectionContenido p {
+    color: var(--dark-color);
+    text-align: center;
+    width: 325px;
+    font-size: 16px;
+}
+
+@media (min-width: 768px) {
+    .sectionContainer {
+        gap: 20px;
+        padding-top: 20px;
+        padding-bottom: 40px;
+    }
+
+    .sectionContainer header h1 {
+        font-size: 42px;
+    }
+
+    .sectionContenido {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .sectionContenido img {
+        width: 250px;
+    }
+
+    .sectionContenido p {
+        text-align: start;
+        width: 325px;
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .sectionContainer {
+        gap: 40px;
+        padding-top: 40px;
+        padding-bottom: 60px;
+    }
+
+    .sectionContainer header h1 {
+        font-size: 62px;
+    }
+
+    .sectionContenido {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+    }
+
+    .sectionContenido img {
+        width: 300px;
+    }
+
+    .sectionContenido p {
+        text-align: start;
+        width: 400px;
+        font-size: 22px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .sectionContainer {
+        gap: 60px;
+        padding-top: 60px;
+        padding-bottom: 80px;
+    }
+
+    .sectionContainer header h1 {
+        font-size: 82px;
+    }
+
+    .sectionContenido {
+        gap: 60px;
+    }
+
+    .sectionContenido img {
+        width: 350px;
+    }
+
+    .sectionContenido p {
+        width: 400px;
+        font-size: 28px;
+    }
+}

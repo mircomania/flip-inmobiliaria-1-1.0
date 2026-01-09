@@ -1,0 +1,74 @@
+.sectionContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+.sectionContainer header h2 {
+    color: var(--orange-color);
+    letter-spacing: 1.5px;
+    font-size: 30px;
+}
+
+.sectionContainer header p {
+    color: var(--dark-color);
+    font-size: 16px;
+}
+
+.sectionForm {
+    width: 325px;
+}
+
+@media (min-width: 768px) {
+    .sectionContainer header h2 {
+        font-size: 42px;
+    }
+
+    .sectionContainer header p {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .sectionContainer {
+        gap: 60px;
+        padding-top: 40px;
+        padding-bottom: 60px;
+    }
+
+    .sectionContainer header h2 {
+        font-size: 62px;
+    }
+
+    .sectionContainer header p {
+        font-size: 20px;
+    }
+
+    .sectionForm {
+        width: 500px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .sectionContainer {
+        gap: 80px;
+        padding-top: 60px;
+        padding-bottom: 80px;
+    }
+
+    .sectionContainer header h2 {
+        font-size: 72px;
+    }
+
+    .sectionContainer header p {
+        font-size: 22px;
+    }
+
+    .sectionForm {
+        width: 600px;
+    }
+}
