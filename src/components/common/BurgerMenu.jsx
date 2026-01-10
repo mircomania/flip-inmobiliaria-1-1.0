@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 
 import { BurgerIcon } from '../../assets/icons/BurgerIcon';
 
-import LogoBurger from '../../assets/images/logo.png';
+import logo from '../../assets/images/global/logo.png';
 
 import { navLinks } from '../utils/NavBarMenu';
 
@@ -91,7 +91,7 @@ export const BurgerMenu = () => {
                 </ul>
 
                 {/* LOGO  */}
-                <img src={LogoBurger} alt="Logotipo de Flip Inmobiliaria" loading="lazy" decoding="async" />
+                <img src={logo} alt="Logotipo de Flip Inmobiliaria" loading="lazy" decoding="async" />
             </div>
         </div>
     );

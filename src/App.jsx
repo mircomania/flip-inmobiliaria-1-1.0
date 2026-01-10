@@ -7,11 +7,11 @@ import { ScrollToTop } from './hooks/ScrollTop';
 import { Footer } from './components/common/Footer';
 
 const LandingPage = lazy(() => import('./components/pages/LandingPage'));
-const ServicioCompra = lazy(() => import('./components/pages/ServicioCompra'));
-const ServicioVenta = lazy(() => import('./components/pages/ServicioVenta'));
-const ServicioRemodelar = lazy(() => import('./components/pages/ServicioRemodelar'));
-const ServicioRentar = lazy(() => import('./components/pages/ServicioRentar'));
-const ServicioInfonavit = lazy(() => import('./components/pages/ServicioInfonavit'));
+const ServicioCompra = lazy(() => import('./components/pages/servicios/ServicioCompra'));
+const ServicioVenta = lazy(() => import('./components/pages/servicios/ServicioVenta'));
+const ServicioRemodelar = lazy(() => import('./components/pages/servicios/ServicioRemodelar'));
+const ServicioRentar = lazy(() => import('./components/pages/servicios/ServicioRentar'));
+const ServicioInfonavit = lazy(() => import('./components/pages/servicios/ServicioInfonavit'));
 const NosotrosPage = lazy(() => import('./components/pages/NosotrosPage'));
 const ContactoPage = lazy(() => import('./components/pages/ContactoPage'));
 

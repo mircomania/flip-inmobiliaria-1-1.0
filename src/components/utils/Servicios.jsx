@@ -1,14 +1,8 @@
-import img1 from '../../assets/images/2.png';
-import img2 from '../../assets/images/6.png';
-import img3 from '../../assets/images/3.png';
-import img4 from '../../assets/images/4.png';
-import img5 from '../../assets/images/5.png';
-
-import icono1 from '../../assets/images/icono-1.png';
-import icono2 from '../../assets/images/icono-2.png';
-import icono3 from '../../assets/images/icono-3.png';
-import icono4 from '../../assets/images/icono-4.png';
-import icono5 from '../../assets/images/icono-5.png';
+import img1 from '../../assets/images/landing/img-lp-section-2-1.png';
+import img2 from '../../assets/images/landing/img-lp-section-2-2.png';
+import img3 from '../../assets/images/landing/img-lp-section-2-3.png';
+import img4 from '../../assets/images/landing/img-lp-section-2-4.png';
+import img5 from '../../assets/images/landing/img-lp-section-2-5.png';
 
 export const Servicios = [
     {
@@ -18,7 +12,6 @@ export const Servicios = [
         titulo2: 'Compra tu casa',
         texto: 'Compramos casas vandalizadas, invadidas o con adeudo. Pagos rápidos y gestión legal.',
         img: img1,
-        icono: icono1,
         dataLink: 'home-servicio-compra-btn',
         dataLink2: 'nosotros-servicio-subcuenta-btn',
     },
@@ -29,7 +22,6 @@ export const Servicios = [
         titulo2: 'Vende tu casa',
         texto: 'Marketing, visitas y cierre. Protegemos tu operación con contratos y asesoría legal.',
         img: img2,
-        icono: icono2,
         dataLink: 'home-servicio-venta-btn',
         dataLink2: 'nosotros-servicio-subcuenta-btn',
     },
@@ -40,7 +32,6 @@ export const Servicios = [
         titulo2: 'Remodela tu hogar',
         texto: 'Proyectos para mejorar plusvalía y preparar tu inmueble para venta o renta.',
         img: img3,
-        icono: icono3,
         dataLink: 'home-servicio-remodela-btn',
         dataLink2: 'nosotros-servicio-subcuenta-btn',
     },
@@ -51,7 +42,6 @@ export const Servicios = [
         titulo2: 'Renta de propiedad',
         texto: 'En Flip Inmobiliaria haces crecer tu inversión sin preocupaciones. Nosotros gestionamos todo por ti.',
         img: img4,
-        icono: icono4,
         dataLink: 'home-servicio-renta-btn',
         dataLink2: 'nosotros-servicio-subcuenta-btn',
     },
@@ -62,7 +52,6 @@ export const Servicios = [
         titulo2: 'Libera tu ahorro Infonavit',
         texto: 'Asesoría para liberar y optimizar tu subcuenta de vivienda.',
         img: img5,
-        icono: icono5,
         dataLink: 'home-servicio-subcuenta-btn',
         dataLink2: 'nosotros-servicio-subcuenta-btn',
     },

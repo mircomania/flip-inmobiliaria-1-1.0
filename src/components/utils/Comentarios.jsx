@@ -1,13 +1,13 @@
-import img1 from '../../assets/images/testimonio1.png';
-import img2 from '../../assets/images/testimonio2.png';
-import img3 from '../../assets/images/testimonio3.png';
-import img4 from '../../assets/images/testimonio4.png';
-import img5 from '../../assets/images/testimonio5.png';
-import img6 from '../../assets/images/testimonio6.png';
-import img7 from '../../assets/images/testimonio7.png';
-import img8 from '../../assets/images/testimonio8.png';
-import img9 from '../../assets/images/testimonio9.png';
-import img10 from '../../assets/images/testimonio10.png';
+import img1 from '../../assets/images/landing/testimonios/testimonio1.png';
+import img2 from '../../assets/images/landing/testimonios/testimonio2.png';
+import img3 from '../../assets/images/landing/testimonios/testimonio3.png';
+import img4 from '../../assets/images/landing/testimonios/testimonio4.png';
+import img5 from '../../assets/images/landing/testimonios/testimonio5.png';
+import img6 from '../../assets/images/landing/testimonios/testimonio6.png';
+import img7 from '../../assets/images/landing/testimonios/testimonio7.png';
+import img8 from '../../assets/images/landing/testimonios/testimonio8.png';
+import img9 from '../../assets/images/landing/testimonios/testimonio9.png';
+import img10 from '../../assets/images/landing/testimonios/testimonio10.png';
 
 export const Comentarios = [
     {

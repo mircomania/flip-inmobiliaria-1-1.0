@@ -2,7 +2,7 @@ import { useLocation, useNavigate } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
 export const BotonNav = ({
-    to = '#contacto',
+    to = '/contacto',
     ariaLabel = 'Ir a la sección de contacto de Flip Inmobiliaria',
     className = 'boton-1 alliance-text',
     title = 'Haz clic para ir a la sección de contacto',

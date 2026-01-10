@@ -1,4 +1,4 @@
-import logoFooter from '../../assets/images/logo.png';
+import logoFooter from '../../assets/images/global/logo.png';
 
 import { NavLink, useLocation, useNavigate } from 'react-router-dom';
 

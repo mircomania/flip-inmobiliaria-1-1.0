@@ -1,6 +1,6 @@
 import styles from '../../../../styles/modules/servicios/compra/sectionCs1.module.css';
 
-import img from '../../../../assets/images/img-section-cs-1.png';
+import img from '../../../../assets/images/servicios/compra/img-section-cs-1.png';
 
 export const SectionCs1 = () => {
     return (

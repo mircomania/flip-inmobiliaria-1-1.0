@@ -1,6 +1,6 @@
 import styles from '../../../styles/modules/landing/sectionLp4.module.css';
 
-import img from '../../../assets/images/img-lp-section-3-1.png';
+import img from '../../../assets/images/landing/img-lp-section-3-1.png';
 
 import { Form } from '../../form/Form';
 

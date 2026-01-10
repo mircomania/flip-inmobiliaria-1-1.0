@@ -3,8 +3,8 @@ import { useLocation } from 'react-router-dom';
 
 import { SectionLp1 } from '../exports/landing/SectionLp1';
 import { SectionLp2 } from '../exports/landing/SectionLp2';
+import { SectionLp3 } from '../exports/landing/SectionLp3';
 import { SectionLp4 } from '../exports/landing/SectionLp4';
-import { SectionLp5 } from '../exports/landing/SectionLp5';
 
 const LandingPage = () => {
     const location = useLocation();
@@ -28,7 +28,7 @@ const LandingPage = () => {
 
             <SectionLp2 />
 
-            <SectionLp5 />
+            <SectionLp3 />
 
             <SectionLp4 />
         </main>

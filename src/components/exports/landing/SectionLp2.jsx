@@ -26,7 +26,7 @@ export const SectionLp2 = () => {
                                 <p className="alliance-text">{servicio.texto}</p>
                             </div>
 
-                            <img src={servicio.img} alt="" />
+                            <img src={servicio.img} alt="Agente de ventas de Flip Inmobiliaria" />
                         </NavLink>
                     ))}
                 </div>

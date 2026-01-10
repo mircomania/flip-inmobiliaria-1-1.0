@@ -1,5 +1,5 @@
 import styles from '../../../styles/modules/nosotros/sectionNp3.module.css';
-import img from '../../../assets/images/img-np-section-3-1.png';
+import img from '../../../assets/images/nosotros/img-np-section-3-1.png';
 
 export const SectionNp3 = () => {
     return (

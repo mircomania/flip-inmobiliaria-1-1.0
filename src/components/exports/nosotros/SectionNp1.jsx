@@ -1,6 +1,6 @@
 import styles from '../../../styles/modules/nosotros/sectionNp1.module.css';
 
-import logo from '../../../assets/images/logo.png';
+import logo from '../../../assets/images/global/logo.png';
 
 export const SectionNp1 = () => {
     return (
