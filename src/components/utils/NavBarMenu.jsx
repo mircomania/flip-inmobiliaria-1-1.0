@@ -3,10 +3,12 @@ export const navLinks = [
         id: 'inicio',
         to: '/',
         label: 'Inicio',
+        useScrollToTop: true,
     },
     {
         id: 'servicios',
         label: 'Servicios',
+        useScrollToTop: true,
         children: [
             { id: 'comprar', to: '/comprar', label: 'Comprar' },
             { id: 'vender', to: '/vender', label: 'Vender' },

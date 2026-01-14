@@ -14,6 +14,7 @@ const ServicioRentar = lazy(() => import('./components/pages/servicios/ServicioR
 const ServicioInfonavit = lazy(() => import('./components/pages/servicios/ServicioInfonavit'));
 const NosotrosPage = lazy(() => import('./components/pages/NosotrosPage'));
 const ContactoPage = lazy(() => import('./components/pages/ContactoPage'));
+const PoliticasPage = lazy(() => import('./components/pages/PoliticasPage'));
 
 function App() {
     const [loading, setLoading] = useState(true);
@@ -65,6 +66,7 @@ function App() {
                         <Route path="/infonavit" element={<ServicioInfonavit />}></Route>
                         <Route path="/nosotros" element={<NosotrosPage />}></Route>
                         <Route path="/contacto" element={<ContactoPage />}></Route>
+                        <Route path="/politica-privacidad" element={<PoliticasPage />}></Route>
                     </Routes>
                 </Suspense>
             )}

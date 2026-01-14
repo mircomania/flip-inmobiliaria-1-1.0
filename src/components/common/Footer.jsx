@@ -17,14 +17,26 @@ export const Footer = () => {
         }
     };
 
+    const handleNavClick = (e, item) => {
+        if (!item.useScrollToTop) return;
+
+        e.preventDefault();
+
+        if (location.pathname === '/') {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        } else {
+            navigate('/');
+        }
+    };
+
     return (
-        <footer className="footer">
+        <footer role="contentinfo" className="footer" aria-label="Navegación pie de página">
             <div className="contenido-footer">
                 <a href="/" aria-label="Ir a la página de inicio" data-link="footer-logo-btn" onClick={handleLogoClick}>
-                    <img src={logoFooter} alt="Logotipo de Flip Inmobiliaria en el pie de página" />
+                    <img src={logoFooter} alt="Logotipo de Flip Inmobiliaria en el pie de página" className="logo-footer" />
                 </a>
 
-                <div className="nav-footer">
+                <nav className="nav-footer">
                     <ul className="alliance-text">
                         {navLinks.map((item) => (
                             <li key={item.id}>
@@ -32,6 +44,7 @@ export const Footer = () => {
                                     to={item.to}
                                     title={item.title}
                                     className={({ isActive }) => (isActive ? 'active' : '')}
+                                    onClick={(e) => handleNavClick(e, item)}
                                     {...(item.dataLink && { 'data-link': item.dataLink })}
                                     {...(item.dataCta && { 'data-cta': item.dataCta })}
                                 >
@@ -40,7 +53,7 @@ export const Footer = () => {
                             </li>
                         ))}
                     </ul>
-                </div>
+                </nav>
             </div>
 
             <div className="utils-footer alliance-text">
@@ -49,14 +62,6 @@ export const Footer = () => {
                 <div className="utils-nav">
                     <NavLink to="/politica-privacidad" title="Ver la política de privacidad" data-link="footer-politica-link">
                         Politica de Privacidad
-                    </NavLink>
-
-                    <NavLink to="/terminos-condiciones" title="Ver los términos y condiciones" data-link="footer-terminos-link">
-                        Terminos y Condiciones
-                    </NavLink>
-
-                    <NavLink to="/faq" title="Ver las preguntas preguntas frecuentes" data-link="footer-faq-link">
-                        FAQ
                     </NavLink>
                 </div>
             </div>
