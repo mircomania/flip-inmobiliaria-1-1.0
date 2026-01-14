@@ -39,8 +39,12 @@
     gap: 10px;
 }
 
-.servicio img {
+.servicioImg {
     width: 80px;
+}
+
+.servicioImg0 {
+    width: 130px;
 }
 
 .serviciosTextos {
@@ -80,7 +84,7 @@
         gap: 10px;
     }
 
-    .servicio img {
+    .servicioImg {
         width: 80px;
     }
 
@@ -115,11 +119,15 @@
         gap: 10px;
     }
 
-    .servicio img {
+    .servicioImg {
         position: absolute;
         width: 120px;
         opacity: 1;
         transition: 0.3s ease 0.1s;
+    }
+
+    .servicioImg0 {
+        width: 170px;
     }
 
     .serviciosTextos {
@@ -173,11 +181,15 @@
         gap: 10px;
     }
 
-    .servicio img {
+    .servicioImg {
         position: absolute;
         width: 120px;
         opacity: 1;
         transition: 0.3s ease 0.1s;
+    }
+
+    .servicioImg0 {
+        width: 170px;
     }
 
     .serviciosTextos {

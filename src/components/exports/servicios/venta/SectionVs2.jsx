@@ -17,7 +17,7 @@ export const SectionVs2 = () => {
                 <div className={styles.serviciosContainer}>
                     {CatServiciosVenta.map((servicio) => (
                         <div key={servicio.id} className={styles.servicio}>
-                            <img src={servicio.img} alt={servicio.titulo} />
+                            <img src={servicio.img} alt={servicio.titulo} className={styles.servicioImg} />
 
                             <div className={styles.serviciosTextos}>
                                 <h3 className="alliance-text">{servicio.titulo}</h3>

@@ -1,9 +1,19 @@
-import styles from '../../../../styles/modules/servicios/renta/sectionRen5.module.css';
+import styles from '../../../../styles/modules/servicios/compra/sectionCs3.module.css';
+
+import { Form } from '../../../form/Form';
 
 export const SectionRen5 = () => {
     return (
         <section className={styles.sectionContainer}>
-            <h2>ren 5</h2>
+            <header>
+                <h2 className="formula-bold">Contáctanos</h2>
+
+                <p className="alliance-text">Rellena el formulario y uno de nuestros asesores te contactará para evaluar tu propiedad</p>
+            </header>
+
+            <div className={styles.sectionForm}>
+                <Form />
+            </div>
         </section>
     );
 };
