@@ -18,6 +18,10 @@
     padding-bottom: 40px;
 }
 
+.sectionContenido2 {
+    background-color: var(--white-color-3);
+}
+
 .sectionContenido header h2 {
     color: var(--orange-color);
     letter-spacing: 1.5px;
@@ -44,6 +48,10 @@
 .contenidoTexto p {
     width: 325px;
     font-size: 16px;
+}
+
+.sectionContenido2 p {
+    color: var(--dark-color);
 }
 
 .contenido img {
