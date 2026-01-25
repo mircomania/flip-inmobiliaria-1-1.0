@@ -19,7 +19,6 @@ export const SectionLp1 = () => {
                     playsInline
                     poster="/flip-inmobiliaria-1-1.0/videos/poster-home.jpg"
                 >
-                    <source src="/flip-inmobiliaria-1-1.0/videos/video-home.webm" type="video/webm" />
                     <source src="/flip-inmobiliaria-1-1.0/videos/video-home.mp4" type="video/mp4" />
                 </video>
 

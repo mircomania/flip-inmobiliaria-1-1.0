@@ -22,10 +22,11 @@
 
 .boton-2 {
     border-radius: 10px;
-    background: var(--orange-color-2);
+    background: var(--dark-color);
     color: var(--white-color);
     width: 200px;
     height: 37px;
+    padding-bottom: 5px;
     font-size: 18px;
 }
 

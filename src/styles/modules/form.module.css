@@ -1,37 +1,29 @@
 .form {
     position: relative;
     z-index: 1;
-    color: var(--dark-color);
-    filter: drop-shadow(0px 0px 5px var(--orange-color-2));
+    color: var(--white-color);
     padding-bottom: 60px;
 }
 
-.inputsContainer {
-    background-color: var(--white-color);
-    border-radius: 20px;
-    padding: 20px 30px;
-}
-
-.campoPrecalificarForm {
+.inputContainer {
     display: flex;
     flex-direction: column;
     text-align: start;
 }
 
-.campoPrecalificarForm select,
-.campoPrecalificarForm input {
-    filter: drop-shadow(0px 0px 5px var(--orange-color-2));
+.inputContainer select,
+.inputContainer input {
     padding-left: 10px;
     padding-right: 10px;
 }
 
-.campoPrecalificarForm label {
+.inputContainer label {
     margin-bottom: 10px;
     margin-left: 2px;
     font-size: 14px;
 }
 
-.formControl {
+.input {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -47,7 +39,7 @@
     padding-left: 50px;
 }
 
-.formControl:focus {
+.input:focus {
     outline: none;
 }
 
@@ -72,16 +64,16 @@
 .mensajeErrorGeneral p {
     position: absolute;
     z-index: 1;
-    color: var(--dark-color);
+    color: var(--white-color);
     margin-top: 5px;
 }
 
 @media (min-width: 1400px) {
-    .campoPrecalificarForm label {
+    .inputContainer label {
         font-size: 16px;
     }
 
-    .formControl {
+    .input {
         padding: 5px 0;
         font-size: 18px;
         height: 38px;

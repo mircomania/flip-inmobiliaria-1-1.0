@@ -1,16 +1,13 @@
 .sectionContainer {
     overflow: hidden;
-    background: linear-gradient(to bottom, transparent 0%, var(--dark-color) 500%);
-}
-
-.fondo {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(to right, transparent 0%, var(--orange-color-2) 400%);
+    background: linear-gradient(to left, var(--orange-color) 0%, var(--dark-color) 100%);
     gap: 20px;
-    padding: 20px 25px;
+    padding-top: 40px;
+    padding-bottom: 60px;
 }
 
 .sectionTitle {
@@ -24,12 +21,12 @@
 
 .sectionTitle h2 {
     letter-spacing: 1.5px;
-    color: var(--orange-color-2);
+    color: var(--white-color);
     font-size: 34px;
 }
 
 .sectionTitle p {
-    color: var(--dark-color);
+    color: var(--white-color);
     font-size: 16px;
 }
 
@@ -37,18 +34,21 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: var(--orange-color-2);
+    border-radius: 10px;
+    padding: 25px 20px;
 }
 
 .sectionForm {
-    width: 325px;
+    width: 265px;
     margin: 0px 0;
 }
 
 @media (min-width: 768px) {
-    .fondo {
-        gap: 80px;
-        padding: 20px 25px;
-        padding-bottom: 0px;
+    .sectionContainer {
+        gap: 20px;
+        padding-top: 40px;
+        padding-bottom: 60px;
     }
 
     .sectionTitle {
@@ -69,17 +69,17 @@
     }
 
     .sectionContenido img {
-        filter: drop-shadow(0px 0px 100px var(--orange-color-2));
         width: 300px;
-        margin-left: -50px;
+        margin-left: -30px;
+        margin-right: -40px;
     }
 }
 
 @media (min-width: 1200px) {
-    .fondo {
-        gap: 40px;
-        padding: 40px 25px;
-        padding-bottom: 0px;
+    .sectionContainer {
+        gap: 20px;
+        padding-top: 40px;
+        padding-bottom: 60px;
     }
 
     .sectionTitle h2 {
@@ -91,7 +91,7 @@
     }
 
     .sectionForm {
-        width: 500px;
+        width: 440px;
     }
 
     .sectionContenido img {
@@ -100,10 +100,10 @@
 }
 
 @media (min-width: 1400px) {
-    .fondo {
-        gap: 50px;
-        padding: 40px 25px;
-        padding-bottom: 0px;
+    .sectionContainer {
+        gap: 40px;
+        padding-top: 60px;
+        padding-bottom: 80px;
     }
 
     .sectionTitle h2 {
@@ -115,7 +115,7 @@
     }
 
     .sectionForm {
-        width: 600px;
+        width: 540px;
     }
 
     .sectionContenido img {
