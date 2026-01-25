@@ -1,11 +1,12 @@
 .sectionContainer {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     background-color: var(--dark-color);
-    padding: 20px 25px;
-    padding-bottom: 30px;
+    padding-top: 40px;
+    padding-bottom: 60px;
     gap: 20px;
 }
 
@@ -16,213 +17,191 @@
 }
 
 .serviciosContainer {
+    position: relative;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 20px 0px;
-    width: 325px;
-}
-
-.serviciosContainer a {
-    text-decoration: none;
+    gap: 30px;
 }
 
 .servicio {
+    position: relative;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    background-color: var(--dark-color);
-    box-shadow: -6px 4px 10px rgba(0, 0, 0, 0.2);
-    border-radius: 20px;
-    gap: 30px;
-    height: 310px;
-    width: 325px;
-    padding: 0px 25px;
-    padding-top: 20px;
-}
-
-.servicioTexto {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     text-align: center;
-    gap: 10px;
-}
-
-.servicioTexto h3 {
-    color: var(--orange-color-2);
-    font-size: 20px;
-}
-
-.servicioTexto p {
+    background-image: var(--bg);
+    background-size: cover;
+    background-position: top;
+    border-radius: 50px;
+    overflow: hidden;
     color: var(--white-color);
+    width: 300px;
+    height: 400px;
+    padding: 40px;
+    gap: 20px;
+}
+
+.servicio::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    z-index: 0;
+}
+
+.servicio > * {
+    position: relative;
+    z-index: 1;
+}
+
+.servicio h3 {
+    letter-spacing: 2px;
+    font-size: 26px;
+}
+
+.servicio p {
     font-size: 16px;
 }
 
-.servicio img {
-    height: 160px;
+.btnTextDesktop {
+    display: none;
 }
 
-@media (min-width: 768px) {
-    .sectionContainer {
-        padding: 40px 35px;
-        padding-bottom: 50px;
-        gap: 30px;
-    }
-
-    .sectionContainer header h2 {
-        font-size: 42px;
-    }
-
-    .serviciosContainer {
-        gap: 30px 30px;
-        width: 698px;
-    }
-
-    .servicio {
-        gap: 10px;
-        width: 325px;
-        height: 310px;
-        padding: 0px 25px;
-        padding-top: 20px;
-    }
-
-    .servicio h3 {
-        font-size: 20px;
-    }
-
-    .servicio p {
-        font-size: 16px;
-    }
+.btnTextMobile {
+    display: inline;
 }
 
 @media (min-width: 1200px) {
-    .sectionContainer {
-        padding: 40px 35px;
-        padding-bottom: 50px;
-        gap: 30px;
-    }
-
     .sectionContainer header h2 {
         font-size: 52px;
     }
 
     .serviciosContainer {
-        gap: 30px 30px;
-        width: 1150px;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .servicioWrapper {
+        position: relative;
+        width: 230px;
+        height: 330px;
     }
 
     .servicio {
-        gap: 10px;
-        width: 350px;
-        padding: 0px 25px;
-        padding-top: 20px;
-        transition:
-            transform 0.3s ease,
-            filter 0.3s ease;
+        transition: transform 0.4s ease;
+        inset: 0;
+        width: 230px;
+        height: 330px;
+        padding: 40px 10px;
+        gap: 20px;
     }
 
-    .servicio:hover {
-        transform: scale(0.95);
-        filter: drop-shadow(0px 0px 10px var(--orange-color-2));
-    }
-
-    .servicio:hover .servicioTexto h3 {
-        transform: translateY(0);
-    }
-
-    .servicio:hover .servicioTexto p {
-        opacity: 1;
-    }
-
-    .servicioTexto h3 {
-        font-size: 22px;
-        transform: translateY(40px);
-        transition: 0.9s ease;
-    }
-
-    .servicioTexto p {
-        font-size: 18px;
-        opacity: 0;
-        transition: 0.3s ease 0.1s;
-    }
-}
-
-@media (min-width: 1400px) {
-    .sectionContainer {
-        padding: 40px 35px;
-        padding-bottom: 60px;
-        gap: 30px;
-    }
-
-    .sectionContainer header h2 {
-        font-size: 82px;
-    }
-
-    .serviciosContainer {
-        gap: 50px 50px;
-        width: 1300px;
-    }
-
-    .servicio {
-        gap: 10px;
-        width: 400px;
-        height: 350px;
-        padding: 0px 25px;
-        padding-top: 20px;
-        transition: transform 0.5s ease;
+    .servicio::before {
+        background: transparent;
+        transition: background 0.4s ease;
     }
 
     .servicio h3 {
-        font-size: 24px;
+        opacity: 0;
+        transform: translateY(20px);
+        transition:
+            opacity 0.4s ease,
+            transform 0.4s ease;
     }
 
     .servicio p {
-        font-size: 20px;
+        opacity: 0;
+        transform: translateY(-20px);
+        transition:
+            opacity 0.4s ease,
+            transform 0.4s ease;
     }
 
-    .servicio img {
-        height: 200px;
+    .servicio :global(.boton-3) {
+        transform: translateY(20px);
+        transition: transform 0.4s ease;
+    }
+
+    .btnTextDesktop {
+        display: inline;
+    }
+
+    .btnTextMobile {
+        display: none;
+    }
+
+    .servicio:hover {
+        height: 360px;
+    }
+
+    .servicio:hover::before {
+        background: rgba(0, 0, 0, 0.45);
+    }
+
+    .servicio:hover h3 {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .servicio:hover p {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .servicio:hover :global(.boton-3) {
+        transform: translateY(0);
+    }
+
+    .servicio:hover .btnTextDesktop {
+        display: none;
+    }
+
+    .servicio:hover .btnTextMobile {
+        display: inline;
     }
 }
 
 @media (min-width: 1700px) {
     .sectionContainer {
-        padding: 40px 35px;
-        padding-bottom: 60px;
-        gap: 30px;
+        padding-top: 60px;
+        padding-bottom: 100px;
+        gap: 40px;
     }
 
     .sectionContainer header h2 {
-        font-size: 82px;
+        font-size: 72px;
     }
 
     .serviciosContainer {
-        gap: 50px 50px;
-        width: 1600px;
+        gap: 20px;
+    }
+
+    .servicioWrapper {
+        width: 300px;
+        height: 400px;
     }
 
     .servicio {
-        gap: 10px;
-        width: 500px;
+        width: 300px;
         height: 400px;
-        padding: 0px 25px;
-        padding-top: 20px;
-        transition: transform 0.5s ease;
+        padding: 40px 20px;
+        gap: 20px;
     }
 
     .servicio h3 {
-        font-size: 24px;
+        font-size: 32px;
     }
 
     .servicio p {
         font-size: 20px;
     }
 
-    .servicio img {
-        height: 250px;
+    .servicio:hover {
+        height: 450px;
     }
 }

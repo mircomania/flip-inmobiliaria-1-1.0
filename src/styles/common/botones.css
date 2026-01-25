@@ -1,5 +1,6 @@
 .boton-1,
-.boton-2 {
+.boton-2,
+.boton-3 {
     position: relative;
     display: inline-flex;
     justify-content: center;
@@ -23,6 +24,16 @@
 .boton-2 {
     border-radius: 10px;
     background: var(--dark-color);
+    color: var(--white-color);
+    width: 200px;
+    height: 37px;
+    padding-bottom: 5px;
+    font-size: 18px;
+}
+
+.boton-3 {
+    border-radius: 10px;
+    background: var(--orange-color-2);
     color: var(--white-color);
     width: 200px;
     height: 37px;

@@ -61,8 +61,8 @@ function App() {
                         <Route path="/" element={<LandingPage />}></Route>
                         <Route path="/comprar" element={<ServicioCompra />}></Route>
                         <Route path="/vender" element={<ServicioVenta />}></Route>
-                        <Route path="/rentar" element={<ServicioRentar />}></Route>
                         <Route path="/remodelar" element={<ServicioRemodelar />}></Route>
+                        <Route path="/rentar" element={<ServicioRentar />}></Route>
                         <Route path="/infonavit" element={<ServicioInfonavit />}></Route>
                         <Route path="/nosotros" element={<NosotrosPage />}></Route>
                         <Route path="/contacto" element={<ContactoPage />}></Route>
