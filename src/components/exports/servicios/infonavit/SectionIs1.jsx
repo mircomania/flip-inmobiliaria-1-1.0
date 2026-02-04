@@ -1,22 +1,35 @@
-import styles from '../../../../styles/modules/servicios/infonavit/sectionis1.module.css';
+import styles from '../../../../styles/modules/servicios/venta/sectionVs1.module.css';
 
-import img from '../../../../assets/images/servicios/infonavit/img-section-is-1.png';
+import img from '../../../../assets/images/servicios/infonavit/img-section-infonavit-2.png';
+
+import { useMediaQuery } from '../../../../hooks/UseMediaQuery';
+
+import { CatServiciosInfonavit } from '../../../utils/CatServiciosInfonavit';
 
 export const SectionIs1 = () => {
+    const isMobile = useMediaQuery('(max-width: 1199px)');
+
     return (
-        <section className={styles.sectionContainer}>
-            <header>
-                <h1 className="formula-bold">Recupera el dinero que acumulaste en tu Subcuenta de Vivienda.</h1>
-            </header>
-
+        <section className={styles.infonavitContainer}>
             <div className={styles.sectionContenido}>
-                <img src={img} alt="Agente de ventas de Flip Inmobiliaria" />
+                <header>
+                    <h1 className="formula-bold">Recupera el dinero que acumulaste en tu Subcuenta de Vivienda</h1>
+                </header>
 
-                <div className={`${styles.contenidoTexto} alliance-text`}>
-                    <p>Si ya no cuentas con un crédito activo y tu dinero sigue en Infonavit, puedes solicitar la devolución de tu ahorro.</p>
+                <div className={`${styles.serviciosContainer} ${styles.serviciosContainer2}`}>
+                    {CatServiciosInfonavit.map((servicio) => (
+                        <div key={servicio.id} className={styles.servicio}>
+                            <img src={servicio.img} alt={servicio.titulo} className={styles.servicioImg} />
 
-                    <p>En Flip Inmobiliaria te acompañamos durante todo el proceso para que recuperes lo que es tuyo de forma rápida y segura </p>
+                            <div className={styles.serviciosTextos}>
+                                <h3 className="alliance-text">{servicio.titulo}</h3>
+                                <p className="alliance-text">{servicio.texto}</p>
+                            </div>
+                        </div>
+                    ))}
                 </div>
+
+                {!isMobile && <img src={img} alt="Agente de ventas de Flip Inmobiliaria" className={styles.imgWeb} />}
             </div>
         </section>
     );

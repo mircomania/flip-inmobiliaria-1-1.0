@@ -1,22 +1,35 @@
-import styles from '../../../../styles/modules/servicios/compra/sectionCs1.module.css';
+import styles from '../../../../styles/modules/servicios/venta/sectionVs1.module.css';
 
-import img from '../../../../assets/images/servicios/compra/img-section-cs-1.png';
+import img from '../../../../assets/images/servicios/compra/img-section-compra-2.png';
+
+import { useMediaQuery } from '../../../../hooks/UseMediaQuery';
+
+import { CatServiciosCompra } from '../../../utils/CatServiciosCompra';
 
 export const SectionCs1 = () => {
+    const isMobile = useMediaQuery('(max-width: 1199px)');
+
     return (
-        <section className={styles.sectionContainer}>
-            <header>
-                <h1 className="formula-bold">Compra un Inmueble</h1>
-            </header>
-
+        <section className={styles.compraContainer}>
             <div className={styles.sectionContenido}>
-                <img src={img} alt="Agente de ventas de Flip Inmobiliaria" />
+                <header>
+                    <h1 className="formula-bold">Compra un Inmueble</h1>
+                </header>
 
-                <p className="alliance-text">
-                    Comprar un inmueble es una inversión importante. En Flip Inmobiliaria ofrecemos una amplia variedad de propiedades —apartamentos,
-                    casas y terrenos— para que encuentres la que mejor se ajuste a tus necesidades y presupuesto. Te asesoramos en zonas, precios de
-                    mercado y opciones de financiamiento para que tomes una decisión informada y libre de estrés.
-                </p>
+                <div className={`${styles.serviciosContainer} ${styles.serviciosContainer2}`}>
+                    {CatServiciosCompra.map((servicio) => (
+                        <div key={servicio.id} className={styles.servicio}>
+                            <img src={servicio.img} alt={servicio.titulo} className={styles.servicioImg} />
+
+                            <div className={styles.serviciosTextos}>
+                                <h3 className="alliance-text">{servicio.titulo}</h3>
+                                <p className="alliance-text">{servicio.texto}</p>
+                            </div>
+                        </div>
+                    ))}
+                </div>
+
+                {!isMobile && <img src={img} alt="Agente de ventas de Flip Inmobiliaria" className={styles.imgWeb} />}
             </div>
         </section>
     );

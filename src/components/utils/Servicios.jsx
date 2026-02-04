@@ -1,5 +1,5 @@
 import img1 from '../../assets/images/landing/img-lp-section-2-1.png';
-import img2 from '../../assets/images/landing/img-lp-section-2-1.png';
+import img2 from '../../assets/images/landing/img-lp-section-2-2.png';
 import img3 from '../../assets/images/landing/img-lp-section-2-3.png';
 import img4 from '../../assets/images/landing/img-lp-section-2-4.png';
 import img5 from '../../assets/images/landing/img-lp-section-2-5.png';
