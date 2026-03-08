@@ -8,9 +8,21 @@
 }
 
 .sectionContainer {
-    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--orange-color-2);
     overflow: hidden;
     padding-top: 40px;
+    padding-bottom: 60px;
+    gap: 20px;
+}
+
+.sectionContainer header h1 {
+    color: var(--white-color);
+    letter-spacing: 1.5px;
+    font-size: 34px;
 }
 
 .slider {
@@ -27,19 +39,38 @@
     gap: 50px;
 }
 
+.comentario {
+    background-color: white;
+    border-radius: 10px;
+    padding-top: 10px;
+    height: 150px;
+}
+
 .comentario img {
     width: 500px;
 }
 
 @media (min-width: 768px) {
+    .sectionContainer header h1 {
+        font-size: 42px;
+    }
+
     .track {
         animation: scroll 30s linear infinite;
     }
 }
 
 @media (min-width: 1200px) {
+    .sectionContainer header h1 {
+        font-size: 52px;
+    }
+
     .track {
         animation: scroll 50s linear infinite;
+    }
+
+    .comentario {
+        height: 180px;
     }
 
     .comentario img {
@@ -48,11 +79,17 @@
 }
 
 @media (min-width: 1400px) {
-    .track {
-        animation: scroll 80s linear infinite;
+    .sectionContainer {
+        gap: 40px;
+        padding-top: 60px;
+        padding-bottom: 80px;
     }
 
-    .comentario img {
-        width: 600px;
+    .sectionContainer header h1 {
+        font-size: 82px;
+    }
+
+    .track {
+        animation: scroll 80s linear infinite;
     }
 }

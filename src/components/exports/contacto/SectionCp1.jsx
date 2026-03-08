@@ -15,7 +15,7 @@ export const SectionCp1 = () => {
 
                 <h2 className="alliance-text">¡Tu nuevo hogar te espera en Flip Inmobiliaria!</h2>
 
-                <p className="alliance-text">Contáctanos para recibir asesoria personalizada y encontrar las mejores opciones del mercado.</p>
+                <p className="alliance-text">Contáctanos para recibir asesoría personalizada y encontrar las mejores opciones del mercado.</p>
             </header>
 
             <div className={styles.sectionContenido}>

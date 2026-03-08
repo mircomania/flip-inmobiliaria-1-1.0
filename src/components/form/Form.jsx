@@ -78,7 +78,7 @@ export const Form = () => {
                 {/* EMAIL */}
                 <div className={styles.inputContainer}>
                     <label htmlFor="email" className={`alliance-text ${errors.email ? styles.labelError : ''}`} aria-label="email del usuario">
-                        Correo electronico
+                        Correo electrónico
                     </label>
                     <input
                         type="email"

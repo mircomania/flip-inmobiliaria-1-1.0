@@ -19,7 +19,7 @@ export const SectionNp3 = () => {
                     <h2 className="formula-bold">Nuestra Visión</h2>
 
                     <p className="alliance-text">
-                        Ser una empresa lider en el mercado inmobiliario, reconocida por su execelencia en el servicio al cliente, la innovación y la
+                        Ser una empresa líder en el mercado inmobiliario, reconocida por su excelencia en el servicio al cliente, la innovación y la
                         calidad de sus servicios.
                     </p>
                 </div>

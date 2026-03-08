@@ -4,6 +4,8 @@ import img from '../../../../assets/images/servicios/compra/img-section-compra-2
 
 import { useMediaQuery } from '../../../../hooks/UseMediaQuery';
 
+import { BotonNav } from '../../../utils/BotonNav';
+
 import { CatServiciosCompra } from '../../../utils/CatServiciosCompra';
 
 export const SectionCs1 = () => {
@@ -15,6 +17,18 @@ export const SectionCs1 = () => {
                 <header>
                     <h1 className="formula-bold">Compra un Inmueble</h1>
                 </header>
+
+                <div className="miga-container">
+                    <BotonNav
+                        to="/"
+                        className="miga alliance-text"
+                        ariaLabel="ir al inicio"
+                        title="haz click para ir al inicio"
+                        dataLink="servicio-incio-link"
+                    >
+                        volver al inicio
+                    </BotonNav>
+                </div>
 
                 <div className={`${styles.serviciosContainer} ${styles.serviciosContainer2}`}>
                     {CatServiciosCompra.map((servicio) => (

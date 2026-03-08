@@ -1,5 +1,5 @@
 import styles from '../../../styles/modules/contacto/sectionCp3.module.css';
-import img from '../../../assets/images/global/equipo-flip.png';
+import img from '../../../assets/images/global/equipo-flip-2.png';
 
 export const SectionCp3 = () => {
     const mapsQuery = encodeURIComponent('Emilio Carranza 732, Centro, 64000 Monterrey, N.L.');

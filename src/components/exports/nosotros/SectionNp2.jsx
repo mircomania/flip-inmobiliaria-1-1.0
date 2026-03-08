@@ -9,7 +9,7 @@ export const SectionNp2 = () => {
     return (
         <section className={styles.sectionContainer}>
             <header>
-                <h2 className="formula-bold">trayectoria </h2>
+                <h2 className="formula-bold">Trayectoria </h2>
             </header>
 
             <div className={styles.sectionContenido}>

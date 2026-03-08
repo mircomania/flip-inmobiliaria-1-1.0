@@ -50,7 +50,7 @@
     letter-spacing: 1.5px;
     line-height: 1;
     color: var(--white-color);
-    filter: drop-shadow(0px 0px 5px var(--orange-color-2));
+    filter: drop-shadow(0px 0px 5px var(--dark-color));
     text-align: center;
     font-size: 52px;
 }
@@ -145,7 +145,7 @@
 @media (min-width: 1200px) {
     .sectionContenido {
         padding-top: 30px;
-        padding-bottom: 40px;
+        padding-bottom: 20px;
         min-height: calc(100vh - 74px);
         justify-content: space-between;
     }
@@ -155,12 +155,12 @@
     }
 
     .sectionContenido header h1 {
-        font-size: 62px;
+        font-size: 52px;
     }
 
     .serviciosContainer {
         gap: 80px 400px;
-        width: 1055px;
+        width: 1300px;
     }
 
     .serviciosContainer2 {
@@ -171,14 +171,15 @@
         transition:
             transform 0.3s ease,
             filter 0.3s ease;
-        width: 325px;
-        padding: 40px 7px;
+        width: 341px;
+        height: 134px;
+        padding: 20px 7px;
         gap: 10px;
     }
 
     .servicioImg {
         position: absolute;
-        width: 120px;
+        width: 100px;
         opacity: 1;
         transition: 0.3s ease 0.1s;
     }
@@ -216,11 +217,11 @@
     .imgWeb {
         position: absolute;
         bottom: 0;
-        height: 480px;
+        height: 380px;
     }
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1700px) {
     .sectionContenido {
         padding-top: 30px;
         padding-bottom: 40px;
@@ -293,6 +294,6 @@
     .imgWeb {
         position: absolute;
         bottom: 0;
-        height: 620px;
+        height: 500px;
     }
 }

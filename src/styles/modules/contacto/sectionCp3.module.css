@@ -4,7 +4,6 @@
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    background: linear-gradient(to bottom, transparent 0%, var(--dark-color) 500%);
     padding-bottom: 60px;
     gap: 20px;
 }

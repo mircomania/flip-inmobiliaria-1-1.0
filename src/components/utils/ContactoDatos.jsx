@@ -15,7 +15,7 @@ export const ContactoDatos = [
     },
     {
         id: '2',
-        titulo: 'Telefono',
+        titulo: 'Teléfono',
         texto: '+52 81 3088 9078',
         img1: img3,
         img2: img4,

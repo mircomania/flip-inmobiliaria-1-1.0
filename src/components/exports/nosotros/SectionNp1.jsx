@@ -5,7 +5,7 @@ import logo from '../../../assets/images/global/logo.png';
 import { useBackVideo } from '../../../hooks/UseBackVideo';
 
 export const SectionNp1 = () => {
-    const videoRef = useBackVideo(0.7);
+    const videoRef = useBackVideo(0.9);
 
     return (
         <section className={styles.sectionContainer}>

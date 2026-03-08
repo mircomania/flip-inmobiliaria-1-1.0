@@ -6,6 +6,10 @@ export const SectionLp3 = () => {
 
     return (
         <section className={styles.sectionContainer}>
+            <header>
+                <h1 className="formula-bold">Testimonios</h1>
+            </header>
+
             <div className={styles.slider}>
                 <div className={styles.track}>
                     {coments.map((comentario, i) => (
