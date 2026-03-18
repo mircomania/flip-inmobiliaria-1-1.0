@@ -1,7 +1,7 @@
-import img1 from '../../assets/images/servicios/venta/icono-venta-1.png';
-import img2 from '../../assets/images/servicios/venta/icono-venta-2.png';
-import img3 from '../../assets/images/servicios/venta/icono-venta-3.png';
-import img4 from '../../assets/images/servicios/venta/icono-venta-4.png';
+import img1 from '../../assets/images/servicios/venta/icono-venta-1.webp';
+import img2 from '../../assets/images/servicios/venta/icono-venta-2.webp';
+import img3 from '../../assets/images/servicios/venta/icono-venta-3.webp';
+import img4 from '../../assets/images/servicios/venta/icono-venta-4.webp';
 
 export const CatServiciosVenta = [
     {

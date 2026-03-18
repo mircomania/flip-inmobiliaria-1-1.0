@@ -1,6 +1,6 @@
-import img1 from '../../assets/images/servicios/compra/icono-compra-1.png';
-import img2 from '../../assets/images/servicios/infonavit/icono-infonavit-1.png';
-import img3 from '../../assets/images/servicios/infonavit/icono-infonavit-2.png';
+import img1 from '../../assets/images/servicios/compra/icono-compra-1.webp';
+import img2 from '../../assets/images/servicios/infonavit/icono-infonavit-1.webp';
+import img3 from '../../assets/images/servicios/infonavit/icono-infonavit-2.webp';
 
 export const CatServiciosInfonavit = [
     {

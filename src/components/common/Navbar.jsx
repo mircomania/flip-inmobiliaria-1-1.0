@@ -1,6 +1,6 @@
 import { NavLink } from 'react-router-dom';
 
-import LogoNavbar from '../../assets/images/global/logo.png';
+import LogoNavbar from '../../assets/images/global/logo.webp';
 
 import { useMediaQuery } from '../../hooks/UseMediaQuery';
 import { BurgerMenu } from './BurgerMenu';

@@ -1,6 +1,6 @@
-import styles from '../../../../styles/modules/servicios/venta/sectionVs1.module.css';
+import styles from '../../../../styles/modules/servicios/sectionVs1.module.css';
 
-import img from '../../../../assets/images/servicios/renta/img-section-ren-2.png';
+import img from '../../../../assets/images/servicios/renta/img-section-ren-2.webp';
 
 import { useMediaQuery } from '../../../../hooks/UseMediaQuery';
 

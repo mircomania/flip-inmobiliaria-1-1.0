@@ -1,7 +1,7 @@
-import img1 from '../../assets/images/servicios/remodela/icono-rem-1.png';
-import img2 from '../../assets/images/servicios/venta/icono-venta-2.png';
-import img3 from '../../assets/images/servicios/remodela/icono-rem-2.png';
-import img4 from '../../assets/images/servicios/remodela/icono-rem-3.png';
+import img1 from '../../assets/images/servicios/remodela/icono-rem-1.webp';
+import img2 from '../../assets/images/servicios/venta/icono-venta-2.webp';
+import img3 from '../../assets/images/servicios/remodela/icono-rem-2.webp';
+import img4 from '../../assets/images/servicios/remodela/icono-rem-3.webp';
 
 export const CatServiciosRemodela = [
     {

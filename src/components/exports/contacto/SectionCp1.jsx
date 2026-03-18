@@ -1,5 +1,5 @@
 import styles from '../../../styles/modules/contacto/sectionCp1.module.css';
-import img from '../../../assets/images/landing/img-lp-section-3-1.png';
+import img from '../../../assets/images/landing/img-lp-section-3-1.webp';
 
 import { Form } from '../../form/Form';
 

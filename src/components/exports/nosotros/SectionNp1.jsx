@@ -1,6 +1,6 @@
 import styles from '../../../styles/modules/nosotros/sectionNp1.module.css';
 
-import logo from '../../../assets/images/global/logo.png';
+import logo from '../../../assets/images/global/logo.webp';
 
 import { useBackVideo } from '../../../hooks/UseBackVideo';
 

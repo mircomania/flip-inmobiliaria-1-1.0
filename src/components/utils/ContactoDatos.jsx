@@ -1,9 +1,9 @@
-import img1 from '../../assets/images/contacto/icono-contacto-1-1.png';
-import img2 from '../../assets/images/contacto/icono-contacto-1-2.png';
-import img3 from '../../assets/images/contacto/icono-contacto-2-1.png';
-import img4 from '../../assets/images/contacto/icono-contacto-2-2.png';
-import img5 from '../../assets/images/contacto/icono-contacto-3-1.png';
-import img6 from '../../assets/images/contacto/icono-contacto-3-2.png';
+import img1 from '../../assets/images/contacto/icono-contacto-1-1.webp';
+import img2 from '../../assets/images/contacto/icono-contacto-1-2.webp';
+import img3 from '../../assets/images/contacto/icono-contacto-2-1.webp';
+import img4 from '../../assets/images/contacto/icono-contacto-2-2.webp';
+import img5 from '../../assets/images/contacto/icono-contacto-3-1.webp';
+import img6 from '../../assets/images/contacto/icono-contacto-3-2.webp';
 
 export const ContactoDatos = [
     {

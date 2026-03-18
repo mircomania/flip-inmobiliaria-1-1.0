@@ -1,5 +1,8 @@
 import styles from '../../../styles/modules/contacto/sectionCp3.module.css';
-import img from '../../../assets/images/global/equipo-flip-2.png';
+import imgMov from '../../../assets/images/global/equipo-flip-3.webp';
+import imgWeb from '../../../assets/images/global/equipo-flip-4.webp';
+
+import { ResponsiveImage } from '../../utils/ResponsiveImage';
 
 export const SectionCp3 = () => {
     const mapsQuery = encodeURIComponent('Emilio Carranza 732, Centro, 64000 Monterrey, N.L.');
@@ -7,7 +10,7 @@ export const SectionCp3 = () => {
 
     return (
         <section className={styles.sectionContainer}>
-            <img src={img} alt="Personal de ventas de Flip inmobiliaria trabajando para darte el mejor servicio" loading="lazy" decoding="async" />
+            <ResponsiveImage mobile={imgMov} desktop={imgWeb} alt="Personal de ventas de Flip inmobiliaria trabajando para darte el mejor servicio" />
 
             <header>
                 <h2 className="formula-bold">¡En Flip Inmobiliaria siempre estamos cerca de ti!</h2>

@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 
 import { BurgerIcon } from '../../assets/icons/BurgerIcon';
 
-import logo from '../../assets/images/global/logo.png';
+import logo from '../../assets/images/global/logo.webp';
 
 import { navLinks } from '../utils/NavBarMenu';
 

@@ -1,6 +1,6 @@
 import styles from '../../../styles/modules/nosotros/sectionNp3.module.css';
 
-import img from '../../../assets/images/global/equipo-flip.png';
+import img from '../../../assets/images/global/equipo-flip-2.webp';
 
 export const SectionNp3 = () => {
     return (

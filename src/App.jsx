@@ -1,5 +1,5 @@
 import { lazy, Suspense, useState, useEffect } from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 
 import { Navbar } from './components/common/Navbar';
 import { Cargando } from './components/utils/Cargando';
@@ -40,7 +40,7 @@ function App() {
     }, [loading]);
 
     return (
-        <BrowserRouter basename="flip-inmobiliaria-1-1.0">
+        <>
             <ScrollToTop />
 
             <Navbar />
@@ -72,7 +72,7 @@ function App() {
             )}
 
             <Footer />
-        </BrowserRouter>
+        </>
     );
 }
 
