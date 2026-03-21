@@ -10,7 +10,12 @@ export const SectionCp3 = () => {
 
     return (
         <section className={styles.sectionContainer}>
-            <ResponsiveImage mobile={imgMov} desktop={imgWeb} alt="Personal de ventas de Flip inmobiliaria trabajando para darte el mejor servicio" />
+            <ResponsiveImage
+                mobile={imgMov}
+                desktop={imgWeb}
+                className={styles.responsiveImage}
+                alt="Personal de ventas de Flip inmobiliaria trabajando para darte el mejor servicio"
+            />
 
             <header>
                 <h2 className="formula-bold">¡En Flip Inmobiliaria siempre estamos cerca de ti!</h2>

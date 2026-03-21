@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://foodieguru.mx/sitemap.xml
+Sitemap: https://flipinmobiliaria.com.mx/sitemap.xml

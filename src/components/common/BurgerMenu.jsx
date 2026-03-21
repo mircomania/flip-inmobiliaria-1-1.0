@@ -54,7 +54,7 @@ export const BurgerMenu = () => {
         <div className="burger-menu" ref={menuRef}>
             {/* ICONO */}
             <div className={`burger-menu-container ${isOpen ? 'open' : ''}`}>
-                <BurgerIcon onClick={toggleMenu} className="burger-menu-icon" aria-label="Abrir menú" />
+                <BurgerIcon onClick={toggleMenu} className="burger-menu-icon" aria-label="Abrir menú" data-link="burgermenu-btn" />
             </div>
 
             {/* CONTENEDOR MENU */}
@@ -73,7 +73,12 @@ export const BurgerMenu = () => {
                                     <ul className={`submenu ${openSubmenu === item.id ? 'open' : ''}`}>
                                         <li className="submenu-inner">
                                             {item.children.map((child) => (
-                                                <NavLink key={child.id} to={child.to} onClick={toggleMenu}>
+                                                <NavLink
+                                                    key={child.id}
+                                                    to={child.to}
+                                                    onClick={toggleMenu}
+                                                    {...(item.dataLink && { 'data-link': item.dataLink })}
+                                                >
                                                     {child.label}
                                                 </NavLink>
                                             ))}
@@ -82,7 +87,12 @@ export const BurgerMenu = () => {
                                 </>
                             ) : (
                                 /* MAIN MENU */
-                                <NavLink to={item.to} onClick={toggleMenu}>
+                                <NavLink
+                                    to={item.to}
+                                    onClick={toggleMenu}
+                                    {...(item.dataLink && { 'data-link': item.dataLink })}
+                                    {...(item.dataCta && { 'data-cta': item.dataCta })}
+                                >
                                     {item.label}
                                 </NavLink>
                             )}

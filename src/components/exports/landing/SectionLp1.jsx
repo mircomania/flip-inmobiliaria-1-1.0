@@ -17,9 +17,9 @@ export const SectionLp1 = () => {
                     loop
                     muted
                     playsInline
-                    poster="/flip-inmobiliaria-1-1.0/videos/poster-home.jpg"
+                    poster="/videos/poster-home.jpg"
                 >
-                    <source src="/flip-inmobiliaria-1-1.0/videos/video-home.mp4" type="video/mp4" />
+                    <source src="/videos/video-home.mp4" type="video/mp4" />
                 </video>
 
                 <header>

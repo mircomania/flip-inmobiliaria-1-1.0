@@ -107,7 +107,7 @@ export const Form = () => {
                 {/* BOTON ENVIAR */}
                 <div className={styles.contentEnvio}>
                     <button type="submit" className="boton-2 alliance-text" disabled={loading}>
-                        {loading ? <Spinner size={22} color="var(--darkblue-color)" strokeWidth={3} speed={1} /> : 'Enviar'}
+                        {loading ? <Spinner size={22} color="var(--white-color)" strokeWidth={3} speed={1} /> : 'Enviar'}
                     </button>
                 </div>
 

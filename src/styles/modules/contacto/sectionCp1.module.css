@@ -46,7 +46,6 @@
 
 .sectionForm {
     width: 265px;
-    margin: 0px 0;
 }
 
 @media (min-width: 768px) {
@@ -56,11 +55,6 @@
 
     .sectionContainer header {
         width: 535px;
-    }
-
-    .sectionContenido {
-        flex-direction: row;
-        align-items: start;
     }
 
     .sectionContenido {
@@ -82,21 +76,14 @@
 @media (min-width: 1200px) {
     .sectionContainer {
         padding-top: 60px;
-        padding-bottom: 100px;
-        gap: 40px;
     }
 
     .sectionContainer header {
         width: 710px;
-        gap: 10px;
     }
 
     .sectionContainer header h1 {
         font-size: 52px;
-    }
-
-    .sectionForm {
-        width: 440px;
     }
 
     .sectionContenido {
@@ -107,6 +94,10 @@
         left: 430px;
         top: 126px;
     }
+
+    .sectionForm {
+        width: 440px;
+    }
 }
 
 @media (min-width: 1400px) {
@@ -116,7 +107,6 @@
 
     .sectionContainer header {
         width: 860px;
-        gap: 10px;
     }
 
     .sectionContainer header h1 {

@@ -45,8 +45,8 @@ export const Footer = () => {
                                     title={item.title}
                                     className={({ isActive }) => (isActive ? 'active' : '')}
                                     onClick={(e) => handleNavClick(e, item)}
-                                    {...(item.dataLink && { 'data-link': item.dataLink })}
-                                    {...(item.dataCta && { 'data-cta': item.dataCta })}
+                                    {...(item.dataLink2 && { 'data-link': item.dataLink2 })}
+                                    {...(item.dataCta2 && { 'data-cta': item.dataCta2 })}
                                 >
                                     {item.label}
                                 </NavLink>

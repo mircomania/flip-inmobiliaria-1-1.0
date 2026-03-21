@@ -80,9 +80,9 @@
 
 @media (min-width: 1400px) {
     .sectionContainer {
-        gap: 40px;
         padding-top: 60px;
         padding-bottom: 80px;
+        gap: 40px;
     }
 
     .sectionContainer header h1 {

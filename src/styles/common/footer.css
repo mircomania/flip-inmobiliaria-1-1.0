@@ -81,7 +81,6 @@
     .utils-footer {
         flex-direction: row;
         justify-content: start;
-        gap: 20px;
     }
 
     .utils-nav {

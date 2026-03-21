@@ -13,7 +13,6 @@ export const Navbar = () => {
         <header>
             <nav className="navbar" aria-label="Barra de navegación principal">
                 {/* LOGO */}
-
                 <div className="logo-container">
                     <NavLink to="/" aria-label="Ir a la página principal" data-link="navbar-logo-btn">
                         <img src={LogoNavbar} alt="Logotipo de Flip Inmobiliaria en la barra de navegación" className="logo-navbar" />
@@ -21,25 +20,34 @@ export const Navbar = () => {
                 </div>
 
                 {/* LISTA  */}
-
                 {!isMobile && (
                     <ul className="menu-nav alliance-text">
                         {navLinks.map((item) => (
                             <li key={item.id} className="nav-item">
                                 {item.children ? (
+                                    /* SUB MENU */
                                     <div className="dropdown">
                                         <span className="dropdown-trigger">{item.label}</span>
 
                                         <ul className="dropdown-menu">
                                             {item.children.map((child) => (
                                                 <li key={child.id}>
-                                                    <NavLink to={child.to}>{child.label}</NavLink>
+                                                    <NavLink to={child.to} {...(item.dataLink && { 'data-link': item.dataLink })}>
+                                                        {child.label}
+                                                    </NavLink>
                                                 </li>
                                             ))}
                                         </ul>
                                     </div>
                                 ) : (
-                                    <NavLink to={item.to}>{item.label}</NavLink>
+                                    /* MAIN MENU */
+                                    <NavLink
+                                        to={item.to}
+                                        {...(item.dataLink && { 'data-link': item.dataLink })}
+                                        {...(item.dataCta && { 'data-cta': item.dataCta })}
+                                    >
+                                        {item.label}
+                                    </NavLink>
                                 )}
                             </li>
                         ))}
@@ -48,7 +56,6 @@ export const Navbar = () => {
             </nav>
 
             {/* BURGERMENU */}
-
             {isMobile && <BurgerMenu />}
         </header>
     );

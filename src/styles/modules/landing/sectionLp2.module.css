@@ -98,7 +98,6 @@
         width: 230px;
         height: 330px;
         padding: 40px 10px;
-        gap: 20px;
     }
 
     .servicio::before {
@@ -177,10 +176,6 @@
         font-size: 72px;
     }
 
-    .serviciosContainer {
-        gap: 20px;
-    }
-
     .servicioWrapper {
         width: 300px;
         height: 400px;
@@ -190,7 +185,6 @@
         width: 300px;
         height: 400px;
         padding: 40px 20px;
-        gap: 20px;
     }
 
     .servicio h3 {

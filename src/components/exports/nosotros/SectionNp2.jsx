@@ -6,6 +6,8 @@ import { Counter } from '../../utils/Counter';
 import { useScrollReveal } from '../../../hooks/useScrollReveal';
 
 export const SectionNp2 = () => {
+    const { ref, isVisible } = useScrollReveal({ threshold: 0.05 });
+
     return (
         <section className={styles.sectionContainer}>
             <header>
@@ -14,7 +16,6 @@ export const SectionNp2 = () => {
 
             <div className={styles.sectionContenido}>
                 {ConocenosSectionNp2.map((item) => {
-                    const { ref, isVisible } = useScrollReveal({ threshold: 0.05 });
                     return (
                         <div key={item.id} ref={ref} className={styles.sectionTexto}>
                             <h3 className="alliance-text">{item.titulo}</h3>

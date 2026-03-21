@@ -1,3 +1,5 @@
+import { TitleSEO } from '../utils/TitleSEO';
+
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 
@@ -24,6 +26,12 @@ const LandingPage = () => {
 
     return (
         <main>
+            <TitleSEO
+                title="Flip Inmobiliaria | Compra, Venta y Renta de Casas en México"
+                description="Encuentra las mejores opciones para comprar, vender o rentar casas en México. Asesoría profesional, remodelación y apoyo con crédito Infonavit en un solo lugar."
+                canonical="https://flipinmobiliaria.com.mx/"
+            />
+
             <SectionLp1 />
 
             <SectionLp2 />

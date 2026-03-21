@@ -17,9 +17,9 @@ export const SectionNp1 = () => {
                     loop
                     muted
                     playsInline
-                    poster="/flip-inmobiliaria-1-1.0/videos/poster-nosotros.jpg"
+                    poster="/videos/poster-nosotros.jpg"
                 >
-                    <source src="/flip-inmobiliaria-1-1.0/videos/video-nosotros.mp4" type="video/mp4" />
+                    <source src="/videos/video-nosotros.mp4" type="video/mp4" />
                 </video>
 
                 <img src={logo} alt="logotipo de Flip Inmobiliaria" />

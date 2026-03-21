@@ -71,20 +71,6 @@
     .sectionContenido {
         flex-direction: row;
         align-items: start;
-        gap: 40px;
-    }
-
-    .textoContenido {
-        width: 325px;
-        gap: 20px;
-    }
-
-    .sectionContenido h3 {
-        font-size: 24px;
-    }
-
-    .sectionContenido p {
-        font-size: 16px;
     }
 
     .mapContainer {
@@ -107,13 +93,8 @@
         font-size: 52px;
     }
 
-    .sectionContenido {
-        gap: 40px;
-    }
-
     .textoContenido {
         width: 400px;
-        gap: 20px;
     }
 
     .sectionContenido h3 {
@@ -127,5 +108,15 @@
     .mapContainer {
         width: 470px;
         height: 269px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .responsiveImage {
+        width: 100%;
+        height: auto;
+        display: block;
+        -webkit-mask-image: linear-gradient(to right, transparent 0%, black 15%, black 85%, transparent 100%);
+        mask-image: linear-gradient(to right, transparent 0%, black 15%, black 85%, transparent 100%);
     }
 }

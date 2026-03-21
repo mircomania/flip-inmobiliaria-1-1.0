@@ -15,6 +15,7 @@ const ServicioInfonavit = lazy(() => import('./components/pages/servicios/Servic
 const NosotrosPage = lazy(() => import('./components/pages/NosotrosPage'));
 const ContactoPage = lazy(() => import('./components/pages/ContactoPage'));
 const PoliticasPage = lazy(() => import('./components/pages/PoliticasPage'));
+const ErrorPage = lazy(() => import('./components/pages/ErrorPage'));
 
 function App() {
     const [loading, setLoading] = useState(true);
@@ -44,32 +45,26 @@ function App() {
             <ScrollToTop />
 
             <Navbar />
-
-            {loading ? (
-                <main className="cargando">
-                    <Cargando />
-                </main>
-            ) : (
-                <Suspense
-                    fallback={
-                        <main className="cargando">
-                            <Cargando />
-                        </main>
-                    }
-                >
-                    <Routes>
-                        <Route path="/" element={<LandingPage />}></Route>
-                        <Route path="/comprar" element={<ServicioCompra />}></Route>
-                        <Route path="/vender" element={<ServicioVenta />}></Route>
-                        <Route path="/remodelar" element={<ServicioRemodelar />}></Route>
-                        <Route path="/rentar" element={<ServicioRentar />}></Route>
-                        <Route path="/infonavit" element={<ServicioInfonavit />}></Route>
-                        <Route path="/nosotros" element={<NosotrosPage />}></Route>
-                        <Route path="/contacto" element={<ContactoPage />}></Route>
-                        <Route path="/politica-privacidad" element={<PoliticasPage />}></Route>
-                    </Routes>
-                </Suspense>
-            )}
+            <Suspense
+                fallback={
+                    <main className="cargando">
+                        <Cargando />
+                    </main>
+                }
+            >
+                <Routes>
+                    <Route path="/" element={<LandingPage />}></Route>
+                    <Route path="/comprar" element={<ServicioCompra />}></Route>
+                    <Route path="/vender" element={<ServicioVenta />}></Route>
+                    <Route path="/remodelar" element={<ServicioRemodelar />}></Route>
+                    <Route path="/rentar" element={<ServicioRentar />}></Route>
+                    <Route path="/infonavit" element={<ServicioInfonavit />}></Route>
+                    <Route path="/nosotros" element={<NosotrosPage />}></Route>
+                    <Route path="/contacto" element={<ContactoPage />}></Route>
+                    <Route path="/politica-privacidad" element={<PoliticasPage />}></Route>
+                    <Route path="*" element={<ErrorPage />}></Route>
+                </Routes>
+            </Suspense>
 
             <Footer />
         </>

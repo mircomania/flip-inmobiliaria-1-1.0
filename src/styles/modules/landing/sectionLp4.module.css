@@ -41,26 +41,15 @@
 
 .sectionForm {
     width: 265px;
-    margin: 0px 0;
 }
 
 @media (min-width: 768px) {
-    .sectionContainer {
-        gap: 20px;
-        padding-top: 40px;
-        padding-bottom: 100px;
-    }
-
     .sectionTitle {
         width: 100%;
     }
 
     .sectionTitle h2 {
         font-size: 42px;
-    }
-
-    .sectionTitle p {
-        font-size: 16px;
     }
 
     .sectionContenido {
@@ -81,8 +70,6 @@
 
 @media (min-width: 1200px) {
     .sectionContainer {
-        gap: 20px;
-        padding-top: 40px;
         padding-bottom: 100px;
     }
 

@@ -51,12 +51,12 @@ export const useForm = (initialState, { onSuccess = () => {}, onError = () => {}
 
         await Swal.fire({
             title,
-            html: `<div class="light-text"><p>${message}</p></div>`,
+            html: `<div class="alliance-text"><p>${message}</p></div>`,
             icon,
             confirmButtonColor: color,
             scrollbarPadding: false,
             customClass: {
-                title: 'bold-text',
+                title: 'formula-bold',
             },
             willOpen: () => {
                 document.body.style.overflow = 'auto';
@@ -145,7 +145,7 @@ export const useForm = (initialState, { onSuccess = () => {}, onError = () => {}
                 ...utmWithoutTimestamp,
             };
             //'http://localhost:5000/submit | http://localhost:5000/api/submit'
-            const response = await fetch('http://localhost:5000/submit', {
+            const response = await fetch('backend/submit.php', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(formDataToSend),
