@@ -55,7 +55,12 @@ export const SectionCp3 = () => {
                     />
 
                     <p className="alliance-text">
-                        <a href={`https://www.google.com/maps/search/?api=1&query=${mapsQuery}`} target="_blank" rel="noopener noreferrer">
+                        <a
+                            href={`https://www.google.com/maps/search/?api=1&query=${mapsQuery}`}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            data-link="contacto-maps-boton"
+                        >
                             Abrir en Google Maps
                         </a>
                     </p>
